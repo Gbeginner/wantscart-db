@@ -148,7 +148,7 @@ public class TableSchema {
                 }
 
                 //set pk
-                if ((f.isAnnotationPresent(PrimaryKey.class) || pd.getName().equals("id")) && (pd.getPropertyType().isAssignableFrom(Number.class) || pd.getPropertyType().isPrimitive())) {
+                if ((f.isAnnotationPresent(PrimaryKey.class) || pd.getName().equals("id")) && (Number.class.isAssignableFrom(pd.getPropertyType()) || pd.getPropertyType().isPrimitive())) {
                     Column pk = new Column();
                     pk.setName(pd.getName());
                     pk.setOriginName(pd.getName());
