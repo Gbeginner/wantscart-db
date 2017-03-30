@@ -14,7 +14,7 @@ import org.springframework.context.ApplicationContextAware;
  * @author <a href="mailto:zhangtao@techwolf.cn">Kylen Zhang</a>
  * Initial created at 2014年3月11日下午2:20:34
  *
- * @param <T>
+ *  <T>
  */
 public class DbwolfJadeDaoBeanFactory<T> extends JadeDaoFactoryBean<T> implements ApplicationContextAware{
     

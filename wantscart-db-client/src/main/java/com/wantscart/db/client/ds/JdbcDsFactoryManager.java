@@ -25,7 +25,7 @@ public class JdbcDsFactoryManager {
     /**
      * 获取一个工厂实例.
      * 
-     * @return 工厂实例
+     *  工厂实例
      */
     public static JdbcDataSourceFactory getFactory() {
         return FactoryHolder.factory;
@@ -38,7 +38,7 @@ public class JdbcDsFactoryManager {
         /**
          * 加载工厂类并创建实例.
          * 
-         * @return 工厂实例
+         *  工厂实例
          */
         private static JdbcDataSourceFactory createFactory() {
             String factoryClazz = getFactoryClazz();
@@ -58,7 +58,7 @@ public class JdbcDsFactoryManager {
     /**
      * 取得工厂类信息.
      * 
-     * @return 工厂实现类名
+     *  工厂实现类名
      */
     private static String getFactoryClazz() {
         String factoryClass = DEFAULT_FACTORY_CLASS;

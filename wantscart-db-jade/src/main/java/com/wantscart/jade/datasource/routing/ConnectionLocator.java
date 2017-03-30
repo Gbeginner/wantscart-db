@@ -32,9 +32,9 @@ public interface ConnectionLocator {
     /**
      * 按照 {@link RoutingActors} 所提供的信息返回一个对应的正确的数据库链接
      * 
-     * @param dataSource
-     * @param actors
-     * @return
+     *  dataSource
+     *  actors
+     *
      * @throws SQLException
      */
     Connection getConnection(RoutingActors actors) throws SQLException;

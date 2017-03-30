@@ -23,8 +23,8 @@ public final class XmlConfigUtil {
     /**
      * 解析数据服务类型.
      * 
-     * @param value
-     * @return 数据服务类型
+     *  value
+     *  数据服务类型
      */
     public static DbInstanceType parseInstanceType(final String value) {
         DbInstanceType type = null;
@@ -36,8 +36,8 @@ public final class XmlConfigUtil {
     /**
      * 解析数据库读写类型.
      * 
-     * @param value
-     * @return
+     *  value
+     *
      */
     public static DbServerType parseServerType(String value) {
         DbServerType wrflag = null;
@@ -50,8 +50,8 @@ public final class XmlConfigUtil {
     /**
      * 解析时间戳，如果时间戳不符合规定格式，会抛出异常.
      * 
-     * @param timeStamp 时间字符串,格式必须为"yy-MM-dd HH:mm:ss" 或 "yy-MM-dd HH:mm".
-     * @return
+     *  timeStamp 时间字符串,格式必须为"yy-MM-dd HH:mm:ss" 或 "yy-MM-dd HH:mm".
+     *
      * @throws ParseException
      */
     public static long parseTimeStamp(String timeStamp) throws ParseException {
@@ -73,9 +73,9 @@ public final class XmlConfigUtil {
     /**
      * 向目标数组中动态添加元素. 该方法扩展了ArrayUtils.add，实现了泛形.
      * 
-     * @param array
-     * @param element
-     * @return
+     *  array
+     *  element
+     *
      */
     @SuppressWarnings("unchecked")
     public static <T> T[] addToArray(T[] array, T element) {

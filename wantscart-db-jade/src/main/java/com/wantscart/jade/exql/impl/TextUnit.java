@@ -16,7 +16,7 @@ public class TextUnit implements ExqlUnit {
     /**
      * 构造输出文本的语句单元。
      * 
-     * @param text - 输出的文本
+     *  text - 输出的文本
      */
     public TextUnit(String text) {
         this.text = text;

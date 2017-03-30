@@ -9,7 +9,6 @@ public interface DataListener {
     /**
      * 获取znode path.
      * 
-     * @return
      */
     String getPath();
 

@@ -24,7 +24,7 @@ public interface RunQueue {
     public void postRunnable(Runnable r);
 
     /**
-     * @return true if the calling thread is the RunQueue dispatch thread.
+     *  true if the calling thread is the RunQueue dispatch thread.
      */
     public boolean isDispatchThread();
 

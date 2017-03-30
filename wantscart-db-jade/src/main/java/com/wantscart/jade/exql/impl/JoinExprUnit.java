@@ -17,7 +17,7 @@ public class JoinExprUnit implements ExqlUnit {
     /**
      * 构造输出表达式内容的语句单元。
      * 
-     * @param text - 输出的表达式
+     *  text - 输出的表达式
      */
     public JoinExprUnit(String expr) {
         this.expr = expr;

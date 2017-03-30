@@ -38,7 +38,7 @@ public class DbwolfMemZkXmlDocConfigurator extends DbwolfXmlDocConfigurator {
 
     /**
      * 
-     * @return
+     *
      */
     private void retriveJadeConfig() {
         try {
@@ -78,7 +78,7 @@ public class DbwolfMemZkXmlDocConfigurator extends DbwolfXmlDocConfigurator {
     /**
      * 监听Jade配置.
      * 
-     * @param db
+     *  db
      */
     private void watchJadeConfig() {
         final String path = jadeConfigPath;

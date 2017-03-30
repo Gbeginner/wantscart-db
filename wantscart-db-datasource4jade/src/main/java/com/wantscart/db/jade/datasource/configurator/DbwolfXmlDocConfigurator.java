@@ -140,14 +140,14 @@ public class DbwolfXmlDocConfigurator implements RoutingConfigurator {
     }
 
     /**
-     * @return the jadeConfigContent
+     *  the jadeConfigContent
      */
     public byte[] getJadeConfigContent() {
         return jadeConfigContent;
     }
 
     /**
-     * @param jadeConfigContent the jadeConfigContent to set
+     *  jadeConfigContent the jadeConfigContent to set
      */
     public void setJadeConfigContent(byte[] jadeConfigContent) {
         if (logger.isDebugEnabled()) {
@@ -216,9 +216,9 @@ public class DbwolfXmlDocConfigurator implements RoutingConfigurator {
     /**
      * 从指定的文件读取配置。
      * 
-     * @param file - 指定的文件
+     *  file - 指定的文件
      * 
-     * @return 加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
+     *  加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
      */
     protected boolean loadXmlContent(byte[] xmlContent) {
 
@@ -276,7 +276,7 @@ public class DbwolfXmlDocConfigurator implements RoutingConfigurator {
     /**
      * 返回新建的: SAX DocumentBuilder 对象。
      * 
-     * @return SAX DocumentBuilder 对象
+     *  SAX DocumentBuilder 对象
      */
     private static DocumentBuilder createDocumentBuilder() {
 

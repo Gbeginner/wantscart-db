@@ -89,7 +89,7 @@ public abstract class BaseJEP implements ParserVisitor {
     }
 
     /**
-     * @return true if expresson is in compiled state otherwise false
+     *  true if expresson is in compiled state otherwise false
      */
     public boolean isValid() {
         return (topNode != null);
@@ -116,7 +116,7 @@ public abstract class BaseJEP implements ParserVisitor {
      * 
      * </blockquote>
      * 
-     * @return The top node of the expression tree
+     *  The top node of the expression tree
      */
     public Node getTopNode() {
         return topNode;
@@ -126,8 +126,8 @@ public abstract class BaseJEP implements ParserVisitor {
      * method is used to get the value of the column in the current row of
      * abstract table data.
      * 
-     * @return the column value
-     * @param column Number in the abstract table data
+     *  the column value
+     *  column Number in the abstract table data
      * @throws ParseException
      */
     @SuppressWarnings("unchecked")
@@ -137,7 +137,7 @@ public abstract class BaseJEP implements ParserVisitor {
      * /** Returns true if an error occured during the most recent action
      * (parsing or evaluation).
      * 
-     * @return Returns <code>true</code> if an error occured during the
+     *  Returns <code>true</code> if an error occured during the
      *         most recent action (parsing or evaluation).
      */
     boolean hasError() {
@@ -148,7 +148,7 @@ public abstract class BaseJEP implements ParserVisitor {
      * Reports information on the errors that occured during the most
      * recent action.
      * 
-     * @return A string containing information on the errors, each
+     *  A string containing information on the errors, each
      *         separated by a newline character; null if no error has
      *         occured
      */
@@ -227,7 +227,7 @@ public abstract class BaseJEP implements ParserVisitor {
      * <p>
      * An exception is thrown, if an error occurs during evaluation.
      * 
-     * @return The value of the expression as an object.
+     *  The value of the expression as an object.
      */
     public Comparable<?> getValue(Comparable<?>[] row) throws ParseException {
         JepRuntime runtime = getThreadJepRuntime(this);

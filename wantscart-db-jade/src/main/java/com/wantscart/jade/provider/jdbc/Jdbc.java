@@ -33,35 +33,35 @@ public interface Jdbc {
 
     /**
      * 
-     * @param dataSource
+     *  dataSource
      */
     public void setDataSource(DataSource dataSource);
 
     /**
      * 根据给定的标准sql以及所带的参数去查询数据库并返回一个结果集
      * 
-     * @param sql
-     * @param args
-     * @param rowMapper
-     * @return
+     *  sql
+     *  args
+     *  rowMapper
+     *
      */
     public List<?> query(Modifier modifier, String sql, Object[] args, RowMapper rowMapper);
 
     /**
      * 根据给定的标准sql以及所带的参数更新数据库(包含插入数据)
      * 
-     * @param sql
-     * @param args
-     * @return
+     *  sql
+     *  args
+     *
      */
     public int update(Modifier modifier, String sql, Object[] args);
 
     /**
      * 
-     * @param modifier
-     * @param sql
-     * @param args
-     * @return
+     *  modifier
+     *  sql
+     *  args
+     *
      * @throws DataAccessException
      */
     public int[] batchUpdate(Modifier modifier, String sql, List<Object[]> args)
@@ -70,9 +70,9 @@ public interface Jdbc {
     /**
      * 根据给定的标准sql以及所带的参数执行插入数据到数据库，并返回自增列值
      * 
-     * @param sql
-     * @param parameters
-     * @return
+     *  sql
+     *  parameters
+     *
      */
     public Object insertAndReturnId(Modifier modifier, String sql, Object[] parameters);
 

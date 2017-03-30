@@ -23,7 +23,7 @@ public @interface KeyColumnOfMap {
     /**
      * 指出要被当成map key的字段名称
      * 
-     * @return
+     *
      */
     String value();
 }

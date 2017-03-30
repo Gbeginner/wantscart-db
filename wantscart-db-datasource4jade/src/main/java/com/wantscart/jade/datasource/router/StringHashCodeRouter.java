@@ -12,9 +12,9 @@ public class StringHashCodeRouter extends HashRouter {
     /**
      * 创建配置记录。
      * 
-     * @param column - 配置的列
-     * @param pattern - 数据表的名称模板
-     * @param count - 散列表数目
+     *  column - 配置的列
+     *  pattern - 数据表的名称模板
+     *  count - 散列表数目
      */
     public StringHashCodeRouter(String column, String pattern, int count) {
         super(column, pattern, count);

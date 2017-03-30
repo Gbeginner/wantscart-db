@@ -34,8 +34,8 @@ public class ExqlPatternImpl implements ExqlPattern {
     /**
      * 构造语句的执行接口。
      * 
-     * @param pattern - 编译的语句
-     * @param unit - 输出的单元
+     *  pattern - 编译的语句
+     *  unit - 输出的单元
      */
     protected ExqlPatternImpl(String pattern, ExqlUnit unit) {
         this.pattern = pattern;
@@ -45,9 +45,9 @@ public class ExqlPatternImpl implements ExqlPattern {
     /**
      * 从语句编译: ExqlPattern 对象。
      * 
-     * @param pattern - 待编译的语句
+     *  pattern - 待编译的语句
      * 
-     * @return ExqlPattern 对象
+     *  ExqlPattern 对象
      */
     public static ExqlPattern compile(String pattern) {
 

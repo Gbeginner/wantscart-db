@@ -10,27 +10,27 @@ public interface Cache {
     /**
      * 从 Cache 缓存池取出对象。
      * 
-     * @param key - 缓存关键字
+     *  key - 缓存关键字
      * 
-     * @return 之前缓存的对象。
+     *  之前缓存的对象。
      */
     Object get(String key);
 
     /**
      * 将缓存的对象放入 Cache 缓存池。
      * 
-     * @param key - 缓存关键字
-     * @param value - 缓存的对象
-     * @param expiry - 缓存过期时间
+     *  key - 缓存关键字
+     *  value - 缓存的对象
+     *  expiry - 缓存过期时间
      * 
-     * @return 之前缓存的对象。
+     *  之前缓存的对象。
      */
     boolean set(String key, Object value, int expiry);
 
     /**
      * 从 Cache 缓存池删除对象。
      * 
-     * @param key - 缓存关键字
+     *  key - 缓存关键字
      */
     boolean delete(String key);
 }

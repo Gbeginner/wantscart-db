@@ -14,7 +14,6 @@ public interface NodeListener {
     /**
      * 获取znode path.
      * 
-     * @return
      */
     String getPath();
 }

@@ -74,7 +74,7 @@ public class ThreadLocalMap {
     /**
      * 取得thread context Map的实例。
      * 
-     * @return thread context Map的实例
+     *  thread context Map的实例
      */
     protected static Map<Object, Object> getContextMap() {
         return (Map<Object, Object>) threadContext.get();

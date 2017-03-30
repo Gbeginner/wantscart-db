@@ -55,8 +55,8 @@ public abstract class AbstractCollectionRowMapper implements RowMapper {
     /**
      * 由子类覆盖此方法，提供一个空的具体集合实现类
      * 
-     * @param columnSize
-     * @return
+     *  columnSize
+     *
      */
     protected abstract Collection<Object> createCollection(int columnSize);
 

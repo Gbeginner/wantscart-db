@@ -21,10 +21,10 @@ import org.apache.log4j.Level;
 public interface Reporter {
 
     /**
-     * @param buffer 组装report信息的 StringBuilder
-     * @param now report 任务开始产生report的当时时间，单位ms
-     * @param sinceLast 上一次report的时间
-     * @param reset 是否需要重新统计
+     *  buffer 组装report信息的 StringBuilder
+     *  now report 任务开始产生report的当时时间，单位ms
+     *  sinceLast 上一次report的时间
+     *  reset 是否需要重新统计
      */
     public void appendReport(StringBuilder buffer, long now, long sinceLast, boolean reset,
             Level level);

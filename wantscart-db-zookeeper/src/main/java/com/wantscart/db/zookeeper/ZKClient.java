@@ -110,12 +110,11 @@ public class ZKClient implements Watcher {
     /**
      * 创建一个客户端实例.
      * 
-     * @param zkServers
      *        服务器端点地址,比如：10.6.39.74:2181,10.6.39.80:2181,10.6.33.105:2181.
      *        但zkServers不能包含任何chroot路径
      *        .去掉chroot路径是因为在zookeeper中还不能真正做到对chroot透明，很难统一api.
      * 
-     * @throws ZKTimeoutException 当链接等待时间超过
+     *  ZKTimeoutException 当链接等待时间超过
      *         <code>DEFAULT_CONNECTION_TIMEOUT</code>后
      */
     public ZKClient(final String zkServers) {
@@ -129,9 +128,9 @@ public class ZKClient implements Watcher {
     /**
      * 创建一个客户端实例.
      * 
-     * @param zkServers
+     *  zkServers
      *        服务器端点地址,比如：10.6.39.74:2181,10.6.39.80:2181,10.6.33.105:2181.
-     * @param sessionTimeout
+     *  sessionTimeout
      *        会话超时时间，客户端断开超过此时间后，服务端将会清除掉所有的相关信息，包括watcher和临时节点
      */
     public ZKClient(final String zkServers, final int sessionTimeout) {
@@ -145,10 +144,10 @@ public class ZKClient implements Watcher {
     /**
      * 创建一个客户端实例.
      * 
-     * @param zkServers
+     *  zkServers
      *        服务器端点地址,比如：10.6.39.74:2181,10.6.39.80:2181,10.6.33.105:2181.
-     * @param sessionTimeout 会话超时时间
-     * @param connectionTimeout 连接超时时间
+     *  sessionTimeout 会话超时时间
+     *  connectionTimeout 连接超时时间
      * 
      * @throws ZKTimeoutException 当链接等待时间超过connectionTimeout后
      */
@@ -164,9 +163,9 @@ public class ZKClient implements Watcher {
     /**
      * 获取一个znode的数据.
      * 
-     * @param path znode路径
-     * @param serlizer 反序列化器
-     * @return 经过反序列化的数据值
+     *  path znode路径
+     *  serlizer 反序列化器
+     *  经过反序列化的数据值
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
      * @throws ZKException
@@ -193,9 +192,9 @@ public class ZKClient implements Watcher {
     /**
      * 强行要求服务端同步，随后获取一个znode的数据.
      * 
-     * @param path znode路径
-     * @param serlizer 序列化器
-     * @return 经过反序列化的数据值
+     *  path znode路径
+     *  serlizer 序列化器
+     *  经过反序列化的数据值
      */
     public <T> T syncReadData(final String path, final DataDeserializer<T> serlizer) {
         final Stat stat = new Stat();
@@ -225,9 +224,9 @@ public class ZKClient implements Watcher {
     /**
      * 修改一个znode的数据.
      * 
-     * @param path znode路径
-     * @param obj 待写入的数据对象
-     * @param serializer 对象序列化器实例
+     *  path znode路径
+     *  obj 待写入的数据对象
+     *  serializer 对象序列化器实例
      */
     public <T> void writeData(final String path, final T obj, final DataSerializer<T> serializer) {
         writeData(path, obj, serializer, -1);
@@ -236,10 +235,10 @@ public class ZKClient implements Watcher {
     /**
      * 修改一个node数据.
      * 
-     * @param path znode路径
-     * @param obj 待写入的数据对象
-     * @param serializer 对象序列化器实例
-     * @param expectedVersion -1表示不限定版本
+     *  path znode路径
+     *  obj 待写入的数据对象
+     *  serializer 对象序列化器实例
+     *  expectedVersion -1表示不限定版本
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
      * @throws ZKException
@@ -266,8 +265,8 @@ public class ZKClient implements Watcher {
     /**
      * 判断一个znode是否存在.
      * 
-     * @param path znode路径
-     * @return znode状态
+     *  path znode路径
+     *  znode状态
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
      * @throws ZKException
@@ -287,8 +286,8 @@ public class ZKClient implements Watcher {
     /**
      * 获取某个znode的全部子节点.
      * 
-     * @param path znode路径
-     * @return 子节点列表
+     *  path znode路径
+     *  子节点列表
      * 
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
@@ -309,7 +308,7 @@ public class ZKClient implements Watcher {
     /**
      * 删除节点.
      * 
-     * @param path znode路径
+     *  path znode路径
      * 
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
@@ -336,10 +335,10 @@ public class ZKClient implements Watcher {
     /**
      * 创建一个持久节点.
      * 
-     * @param path znode路径
-     * @param obj
-     * @param serializer
-     * @param createParents true则创建父节点，false则不创建
+     *  path znode路径
+     *  obj
+     *  serializer
+     *  createParents true则创建父节点，false则不创建
      * 
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
@@ -370,9 +369,9 @@ public class ZKClient implements Watcher {
     /**
      * 创建一个临时节点.
      * 
-     * @param path znode路径
-     * @param obj
-     * @param serializer
+     *  path znode路径
+     *  obj
+     *  serializer
      * 
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
@@ -394,7 +393,7 @@ public class ZKClient implements Watcher {
     /**
      * 注册一个数据观察者.
      * 
-     * @param watcher
+     *  watcher
      */
     public void registerDataListener(final DataListener listener) {
         final String path = listener.getPath();
@@ -427,7 +426,7 @@ public class ZKClient implements Watcher {
     /**
      * 注册一个node观察者.
      * 
-     * @param watcher
+     *  watcher
      */
     public void registerNodeListener(final NodeListener listener) {
         final String path = listener.getPath();
@@ -460,8 +459,8 @@ public class ZKClient implements Watcher {
     /**
      * 不停地尝试执行任务，直到任务执行完毕.
      * 
-     * @param callable
-     * @return 执行任务返回的结果
+     *  callable
+     *  执行任务返回的结果
      * @throws InterruptedException
      * @throws Exception
      */
@@ -543,8 +542,8 @@ public class ZKClient implements Watcher {
     /**
      * 建立zookeeper连接
      * 
-     * @param connectionTimeout 连接超时时间
-     * @param watcher
+     *  connectionTimeout 连接超时时间
+     *  watcher
      * @throws ZKTimeoutException 当链接等待时间超过connectionTimeout后
      */
     private void connect(final long connectionTimeout, final Watcher watcher) {
@@ -598,9 +597,9 @@ public class ZKClient implements Watcher {
     /**
      * 在与zookeeper建立连接之前一直等待.
      * 
-     * @param connectionTimeout 连接超时时间
-     * @param unit 超时时间单位
-     * @return
+     *  connectionTimeout 连接超时时间
+     *  unit 超时时间单位
+     *
      * @throws InterruptedException 当阻塞被中断
      */
     private boolean waitUntilConnected(final long connectionTimeout, final TimeUnit unit)
@@ -628,7 +627,7 @@ public class ZKClient implements Watcher {
     /**
      * 处理节点数据或子节点的改变.
      * 
-     * @param event
+     *  event
      */
     private void processDataOrChildChange(final WatchedEvent event) {
         String path = event.getPath();
@@ -653,8 +652,8 @@ public class ZKClient implements Watcher {
     /**
      * 引发一个节点改变事件.
      * 
-     * @param path znode路径
-     * @param listeners 待通知的监听器
+     *  path znode路径
+     *  listeners 待通知的监听器
      */
     private void fireNodeChangedEvent(final String path, final Set<NodeListener> listeners) {
         for (final NodeListener lis : listeners) {
@@ -675,8 +674,8 @@ public class ZKClient implements Watcher {
     /**
      * 引发一个数据改变事件.
      * 
-     * @param path znode路径
-     * @param listeners 待通知的监听器
+     *  path znode路径
+     *  listeners 待通知的监听器
      */
     private void fireDataChangedEvent(final String path, final Set<DataListener> listeners) {
         for (final DataListener lis : listeners) {
@@ -696,7 +695,7 @@ public class ZKClient implements Watcher {
     /**
      * 状态发生变化进行回调.
      * 
-     * @param event zookeeper事件
+     *  event zookeeper事件
      */
     private void processStateChange(final WatchedEvent event) {
         setCurrentState(event.getState());
@@ -742,7 +741,7 @@ public class ZKClient implements Watcher {
     /**
      * 监视节点数据变化.
      * 
-     * @param path znode路径
+     *  path znode路径
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
      * @throws ZKException
@@ -769,7 +768,7 @@ public class ZKClient implements Watcher {
     /**
      * 监视节点变化.
      * 
-     * @param path znode路径
+     *  path znode路径
      * @throws ZKKeeperException zookeeper发生异常时
      * @throws ZKInterruptedException 调用zookeeper服务时，线程发生中断
      * @throws ZKException
@@ -796,8 +795,8 @@ public class ZKClient implements Watcher {
     /**
      * 检查当前节点是否存在监听器.
      * 
-     * @param path znode路径
-     * @return true表示已经进行过监听,false表示未进行过监听
+     *  path znode路径
+     *  true表示已经进行过监听,false表示未进行过监听
      */
     private boolean hasDataListener(final String path) {
         return dataListeners.containsKey(path) ? !dataListeners.get(path).isEmpty() : false;
@@ -806,8 +805,8 @@ public class ZKClient implements Watcher {
     /**
      * 检查子节点是否存在监听器.
      * 
-     * @param path znode路径
-     * @return true表示已经进行过监听,false表示未进行过监听
+     *  path znode路径
+     *  true表示已经进行过监听,false表示未进行过监听
      */
     private boolean hasNodeListener(final String path) {
         return nodeListeners.contains(path) ? !nodeListeners.get(path).isEmpty() : false;
@@ -816,7 +815,7 @@ public class ZKClient implements Watcher {
     /**
      * 修改客户端的当前状态.
      * 
-     * @param state
+     *  state
      */
     private void setCurrentState(final KeeperState state) {
         this.currentState = state;
@@ -829,7 +828,7 @@ public class ZKClient implements Watcher {
     /**
      * 客户端是否已经被关闭.
      * 
-     * @return
+     *
      */
     public boolean isShutdownTriggered() {
         return shutdownTriggered;
@@ -845,8 +844,8 @@ public class ZKClient implements Watcher {
         /**
          * 带有重试过程的getChildren.
          * 
-         * @param path
-         * @param watch
+         *  path
+         *  watch
          * 
          * @throws KeeperException
          * @throws InterruptedException
@@ -865,8 +864,8 @@ public class ZKClient implements Watcher {
         /**
          * 带有重试过程的exist.
          * 
-         * @param path
-         * @param watch
+         *  path
+         *  watch
          * @throws KeeperException
          * @throws InterruptedException
          * @throws Exception
@@ -884,10 +883,10 @@ public class ZKClient implements Watcher {
         /**
          * 创建节点.
          * 
-         * @param path
-         * @param obj
-         * @param serializer
-         * @param createMode
+         *  path
+         *  obj
+         *  serializer
+         *  createMode
          * @throws KeeperException
          * @throws InterruptedException
          * @throws Exception

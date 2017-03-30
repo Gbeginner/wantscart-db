@@ -10,9 +10,9 @@ public interface CacheProvider {
     /**
      * 从缓存池的名称获取实例。
      * 
-     * @param poolName - 缓存池的名称
+     *  poolName - 缓存池的名称
      * 
-     * @return 缓存池实例
+     *  缓存池实例
      */
     Cache getCacheByPool(String poolName);
 }

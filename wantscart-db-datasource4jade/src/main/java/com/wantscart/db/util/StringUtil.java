@@ -96,9 +96,9 @@ public class StringUtil {
     /**
      * Dumps the given bytes to STDOUT as a hex dump (up to length bytes).
      * 
-     * @param byteBuffer the data to print as hex
-     * @param length the number of bytes to print
-     * @return ...
+     *  byteBuffer the data to print as hex
+     *  length the number of bytes to print
+     *  ...
      */
     public static final String dumpAsHex(byte[] byteBuffer, int length) {
         StringBuffer outputBuf = new StringBuffer(length * 4);
@@ -175,11 +175,11 @@ public class StringUtil {
      * Unfortunately, SJIS has 0x5c as a high byte in some of its
      * double-byte characters, so we need to escape it.
      * 
-     * @param origBytes the original bytes in SJIS format
-     * @param origString the string that had .getBytes() called on it
-     * @param offset where to start converting from
-     * @param length how many characters to convert.
-     * @return byte[] with 0x5c escaped
+     *  origBytes the original bytes in SJIS format
+     *  origString the string that had .getBytes() called on it
+     *  offset where to start converting from
+     *  length how many characters to convert.
+     *  byte[] with 0x5c escaped
      */
     public static byte[] escapeEasternUnicodeByteStream(byte[] origBytes, String origString,
             int offset, int length) {
@@ -295,9 +295,9 @@ public class StringUtil {
      * StringUtil.equals(&quot;abc&quot;, &quot;ABC&quot;) = false
      * </pre>
      * 
-     * @param str1 要比较的字符串1
-     * @param str2 要比较的字符串2
-     * @return 如果两个字符串相同，或者都是<code>null</code>，则返回<code>true</code>
+     *  str1 要比较的字符串1
+     *  str2 要比较的字符串2
+     *  如果两个字符串相同，或者都是<code>null</code>，则返回<code>true</code>
      */
     public static boolean equals(String str1, String str2) {
         if (str1 == null) {
@@ -318,9 +318,9 @@ public class StringUtil {
      * StringUtil.equalsIgnoreCase(&quot;abc&quot;, &quot;ABC&quot;) = true
      * </pre>
      * 
-     * @param str1 要比较的字符串1
-     * @param str2 要比较的字符串2
-     * @return 如果两个字符串相同，或者都是<code>null</code>，则返回<code>true</code>
+     *  str1 要比较的字符串1
+     *  str2 要比较的字符串2
+     *  如果两个字符串相同，或者都是<code>null</code>，则返回<code>true</code>
      */
     public static boolean equalsIgnoreCase(String str1, String str2) {
         if (str1 == null) {
@@ -352,8 +352,8 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param str 要分割的字符串
-     * @return 分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
+     *  str 要分割的字符串
+     *  分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String[] split(String str) {
         return split(str, null, -1);
@@ -376,9 +376,9 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param str 要分割的字符串
-     * @param separatorChar 分隔符
-     * @return 分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
+     *  str 要分割的字符串
+     *  separatorChar 分隔符
+     *  分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String[] split(String str, char separatorChar) {
         if (str == null) {
@@ -436,9 +436,9 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param str 要分割的字符串
-     * @param separatorChars 分隔符
-     * @return 分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
+     *  str 要分割的字符串
+     *  separatorChars 分隔符
+     *  分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String[] split(String str, String separatorChars) {
         return split(str, separatorChars, -1);
@@ -462,10 +462,10 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param str 要分割的字符串
-     * @param separatorChars 分隔符
-     * @param max 返回的数组的最大个数，如果小于等于0，则表示无限制
-     * @return 分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
+     *  str 要分割的字符串
+     *  separatorChars 分隔符
+     *  max 返回的数组的最大个数，如果小于等于0，则表示无限制
+     *  分割后的字符串数组，如果原字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String[] split(String str, String separatorChars, int max) {
         if (str == null) {
@@ -577,10 +577,10 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param text 要扫描的字符串
-     * @param repl 要搜索的子串
-     * @param with 替换字符串
-     * @return 被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
+     *  text 要扫描的字符串
+     *  repl 要搜索的子串
+     *  with 替换字符串
+     *  被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String replaceOnce(String text, String repl, String with) {
         return replace(text, repl, with, 1);
@@ -604,10 +604,10 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param text 要扫描的字符串
-     * @param repl 要搜索的子串
-     * @param with 替换字符串
-     * @return 被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
+     *  text 要扫描的字符串
+     *  repl 要搜索的子串
+     *  with 替换字符串
+     *  被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String replace(String text, String repl, String with) {
         return replace(text, repl, with, -1);
@@ -634,12 +634,12 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param text 要扫描的字符串
-     * @param repl 要搜索的子串
-     * @param with 替换字符串
-     * @param max maximum number of values to replace, or <code>-1</code>
+     *  text 要扫描的字符串
+     *  repl 要搜索的子串
+     *  with 替换字符串
+     *  max maximum number of values to replace, or <code>-1</code>
      *        if no maximum
-     * @return 被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
+     *  被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String replace(String text, String repl, String with, int max) {
         if ((text == null) || (repl == null) || (with == null) || (repl.length() == 0)
@@ -678,10 +678,10 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param str 要扫描的字符串
-     * @param searchChar 要搜索的字符
-     * @param replaceChar 替换字符
-     * @return 被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
+     *  str 要扫描的字符串
+     *  searchChar 要搜索的字符
+     *  replaceChar 替换字符
+     *  被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String replaceChars(String str, char searchChar, char replaceChar) {
         if (str == null) {
@@ -720,10 +720,10 @@ public class StringUtil {
      * 
      * </p>
      * 
-     * @param str 要扫描的字符串
-     * @param searchChars 要搜索的字符串
-     * @param replaceChars 替换字符串
-     * @return 被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
+     *  str 要扫描的字符串
+     *  searchChars 要搜索的字符串
+     *  replaceChars 替换字符串
+     *  被替换后的字符串，如果原始字符串为<code>null</code>，则返回<code>null</code>
      */
     public static String replaceChars(String str, String searchChars, String replaceChars) {
         if ((str == null) || (str.length() == 0) || (searchChars == null)

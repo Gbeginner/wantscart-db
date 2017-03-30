@@ -19,9 +19,9 @@ public class StringFillFormat {
     /**
      * 格式化后返回的字符串
      * 
-     * @param s 需要格式化的原始字符串，默认按左对齐。
-     * @param fillLength 填充长度
-     * @return String
+     *  s 需要格式化的原始字符串，默认按左对齐。
+     *  fillLength 填充长度
+     *  String
      */
     public static String format(String s, int fillLength) {
         return format(s, fillLength, defaultSplitChar, ALIGN_LEFT);
@@ -30,9 +30,9 @@ public class StringFillFormat {
     /**
      * 格式化后返回的字符串
      * 
-     * @param i 需要格式化的数字类型，默认按右对齐。
-     * @param fillLength 填充长度
-     * @return String
+     *  i 需要格式化的数字类型，默认按右对齐。
+     *  fillLength 填充长度
+     *  String
      */
     public static String format(int i, int fillLength) {
         return format(Integer.toString(i), fillLength, defaultSplitChar, ALIGN_RIGHT);
@@ -41,20 +41,20 @@ public class StringFillFormat {
     /**
      * 格式化后返回的字符串
      * 
-     * @param l 需要格式化的数字类型，默认按右对齐。
-     * @param fillLength 填充长度
-     * @return String
+     *  l 需要格式化的数字类型，默认按右对齐。
+     *  fillLength 填充长度
+     *  String
      */
     public static String format(long l, int fillLength) {
         return format(Long.toString(l), fillLength, defaultSplitChar, ALIGN_RIGHT);
     }
 
     /**
-     * @param s 需要格式化的原始字符串
-     * @param fillLength 填充长度
-     * @param fillChar 填充的字符
-     * @param align 填充方式（左边填充还是右边填充）
-     * @return String
+     *  s 需要格式化的原始字符串
+     *  fillLength 填充长度
+     *  fillChar 填充的字符
+     *  align 填充方式（左边填充还是右边填充）
+     *  String
      */
     public static String format(String s, int fillLength, char fillChar, int align) {
         if (s == null) {

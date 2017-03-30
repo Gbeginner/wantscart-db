@@ -96,7 +96,7 @@ public class BeanPropertyRowMapper implements RowMapper {
      * Create a new BeanPropertyRowMapper, accepting unpopulated properties
      * in the target bean.
      *
-     * @param mappedClass the class that each row should be mapped to
+     *  mappedClass the class that each row should be mapped to
      */
     public BeanPropertyRowMapper(Class<?> mappedClass, boolean checkColumns, boolean checkProperties) {
         this.mappedClass = mappedClass;
@@ -146,8 +146,8 @@ public class BeanPropertyRowMapper implements RowMapper {
      * Any upper case letters are converted to lower case with a preceding
      * underscore.
      *
-     * @param camelCaseName the string containing original name
-     * @return the converted name
+     *  camelCaseName the string containing original name
+     *  the converted name
      */
     private String[] underscoreName(String camelCaseName) {
         StringBuilder result = new StringBuilder();
@@ -258,8 +258,8 @@ public class BeanPropertyRowMapper implements RowMapper {
     }
 
     /**
-     * @param clazz
-     * @return
+     *  clazz
+     *
      * @throws BeanInstantiationException
      * @see {@link BeanUtils#instantiateClass(Class)}
      */

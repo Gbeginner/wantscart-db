@@ -25,10 +25,10 @@ public class ExqlUtils {
     /**
      * 返回在语句输出的内容。
      * 
-     * @param exprResolver - 使用的引擎
-     * @param expression - 解释的表达式
+     *  exprResolver - 使用的引擎
+     *  expression - 解释的表达式
      * 
-     * @return 输出的内容
+     *  输出的内容
      */
     public static Object execExpr(ExprResolver exprResolver, String expression) {
 
@@ -50,9 +50,9 @@ public class ExqlUtils {
     /**
      * 检查对象是否有效。
      * 
-     * @param obj - 检查的对象
+     *  obj - 检查的对象
      * 
-     * @return true / false
+     *  true / false
      */
     public static boolean isValid(Object obj) {
 
@@ -62,9 +62,9 @@ public class ExqlUtils {
     /**
      * 将对象转换成: Boolean 值。
      * 
-     * @param obj - 用于转换的对象
+     *  obj - 用于转换的对象
      * 
-     * @return true / false
+     *  true / false
      */
     public static boolean asBoolean(Object obj) {
 
@@ -99,9 +99,9 @@ public class ExqlUtils {
     /**
      * 将对象转换成: java.lang.Object 数组。
      * 
-     * @param obj 用于转换的对象
+     *  obj 用于转换的对象
      * 
-     * @return java.lang.Object 数组
+     *  java.lang.Object 数组
      */
     public static Object[] asArray(Object obj) {
 
@@ -139,9 +139,9 @@ public class ExqlUtils {
     /**
      * 将对象转换成: Collection 集合。
      * 
-     * @param obj - 用于转换的对象
+     *  obj - 用于转换的对象
      * 
-     * @return Collection 集合
+     *  Collection 集合
      */
     public static Collection<?> asCollection(Object obj) {
 

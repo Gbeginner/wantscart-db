@@ -25,13 +25,13 @@ public interface JdbcWrapper extends Jdbc {
 
     /**
      * 
-     * @param jdbc
+     *  jdbc
      */
     public void setJdbc(Jdbc jdbc);
 
     /**
      * 
-     * @return
+     *
      */
     public Jdbc getJdbc();
 

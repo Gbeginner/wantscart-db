@@ -29,7 +29,7 @@ public class DbwolfJdbcDataAccessProvider extends JdbcDataAccessProvider {
         return interpreters;
     }
     /**
-     * @param intercepter the intercepter to set
+     *  intercepter the intercepter to set
      */
     public void setInterpreter(SQLInterpreter intercepter) {
         this.interpreter = intercepter;

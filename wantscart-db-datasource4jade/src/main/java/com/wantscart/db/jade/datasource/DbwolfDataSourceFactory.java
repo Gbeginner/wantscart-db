@@ -44,7 +44,7 @@ public class DbwolfDataSourceFactory implements DataSourceFactory {
     }
 
     /**
-     * @param dbAgent the dbAgent to set
+     *  dbAgent the dbAgent to set
      */
     public void setDbAgent(DbAgent dbAgent) {
         this.dbAgent = dbAgent;

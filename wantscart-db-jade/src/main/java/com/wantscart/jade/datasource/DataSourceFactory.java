@@ -11,9 +11,9 @@ public interface DataSourceFactory {
 
     /**
      * 
-     * @param daoClass - 数据源名称
+     *  daoClass - 数据源名称
      * 
-     * @return {@link javax.sql.DataSource} 实例
+     *  {@link javax.sql.DataSource} 实例
      */
     DataSource getDataSource(Class<?> daoClass);
 

@@ -71,7 +71,7 @@ public class ExprResolverImpl implements ExprResolver {
     /**
      * 构造表达式处理器。
      * 
-     * @param mapVars - 初始的参数表
+     *  mapVars - 初始的参数表
      */
     public ExprResolverImpl(Map<String, ?> mapVars) {
         this();
@@ -81,8 +81,8 @@ public class ExprResolverImpl implements ExprResolver {
     /**
      * 构造表达式处理器。
      * 
-     * @param mapVars - 初始的参数表
-     * @param mapConsts - 初始的常量表
+     *  mapVars - 初始的参数表
+     *  mapConsts - 初始的常量表
      */
     public ExprResolverImpl(Map<String, ?> mapVars, Map<String, ?> mapConsts) {
         this();
@@ -93,7 +93,7 @@ public class ExprResolverImpl implements ExprResolver {
     /**
      * 返回表达式处理器的参数表。
      * 
-     * @return 处理器的参数表
+     *  处理器的参数表
      */
     public Map<String, ?> getVars() {
         return mapVars;
@@ -102,7 +102,7 @@ public class ExprResolverImpl implements ExprResolver {
     /**
      * 设置表达式处理器的参数表。
      * 
-     * @param map - 处理器的参数表
+     *  map - 处理器的参数表
      */
     public void setVars(Map<String, ?> map) {
         mapVars.putAll(map);
@@ -111,7 +111,7 @@ public class ExprResolverImpl implements ExprResolver {
     /**
      * 返回表达式处理器的常量表。
      * 
-     * @return 处理器的常量表
+     *  处理器的常量表
      */
     public Map<String, ?> getConstants() {
         return mapConsts;
@@ -120,7 +120,7 @@ public class ExprResolverImpl implements ExprResolver {
     /**
      * 设置表达式处理器的常量表。
      * 
-     * @param map - 处理器的常量表
+     *  map - 处理器的常量表
      */
     public void setConstants(Map<String, ?> map) {
         mapConsts.putAll(map);

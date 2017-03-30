@@ -5,15 +5,15 @@ import com.wantscart.db.zookeeper.exception.ZKDataSerializeException;
 /**
  * 对象序列化。
  * 
- * @param <T>
+ *  <T>
  */
 public interface DataSerializer<T> {
 
     /**
      * 序列化.
      * 
-     * @param obj
-     * @return
+     *  obj
+     *
      * @throws ZKDataSerializeException
      */
     byte[] serialize(final T obj) throws ZKDataSerializeException;

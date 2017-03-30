@@ -21,8 +21,8 @@ public class RoundRouter implements Router {
     /**
      * 创建配置记录。
      * 
-     * @param pattern - 数据表的名称模板
-     * @param count - 散列表数目
+     *  pattern - 数据表的名称模板
+     *  count - 散列表数目
      */
     public RoundRouter(String pattern, int count) {
         this.pattern = pattern;
@@ -37,7 +37,7 @@ public class RoundRouter implements Router {
     /**
      * 返回数据表的名称模板。
      * 
-     * @return 数据表的名称模板
+     *  数据表的名称模板
      */
     public String getPattern() {
         return pattern;
@@ -46,7 +46,7 @@ public class RoundRouter implements Router {
     /**
      * 设置数据表的名称模板。
      * 
-     * @param pattern - 数据表的名称模板
+     *  pattern - 数据表的名称模板
      */
     public void setPattern(String pattern) {
         this.pattern = pattern;
@@ -55,7 +55,7 @@ public class RoundRouter implements Router {
     /**
      * 返回散列表数目。
      * 
-     * @return 散列表数目
+     *  散列表数目
      */
     public int getCount() {
         return count;
@@ -64,7 +64,7 @@ public class RoundRouter implements Router {
     /**
      * 设置散列表数目。
      * 
-     * @param count - 散列表数目
+     *  count - 散列表数目
      */
     public void setCount(int count) {
         this.count = count;

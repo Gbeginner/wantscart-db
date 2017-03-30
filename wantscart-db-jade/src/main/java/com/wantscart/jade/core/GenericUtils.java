@@ -21,9 +21,9 @@ public class GenericUtils {
     /**
      * 从参数, 返回值, 基类的: Generic 类型信息获取传入的实际类信息。
      * 
-     * @param genericType - Generic 类型信息
+     *  genericType - Generic 类型信息
      * 
-     * @return 实际类信息
+     *  实际类信息
      */
     public static Class<?>[] getActualClass(Type genericType) {
 
@@ -51,11 +51,11 @@ public class GenericUtils {
     /**
      * 收集类的所有常量。
      * 
-     * @param clazz - 收集目标
-     * @param findAncestor - 是否查找父类
-     * @param findInterfaces - 是否查找接口
+     *  clazz - 收集目标
+     *  findAncestor - 是否查找父类
+     *  findInterfaces - 是否查找接口
      * 
-     * @return {@link Map} 包含类的所有常量
+     *  {@link Map} 包含类的所有常量
      */
     public static Map<String, ?> getConstantFrom(Class<?> clazz, // NL
             boolean findAncestor, boolean findInterfaces) {

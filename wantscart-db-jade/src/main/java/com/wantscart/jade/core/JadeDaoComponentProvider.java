@@ -80,7 +80,7 @@ public class JadeDaoComponentProvider implements ResourceLoaderAware {
 /**
      * Create a JadeDaoComponentProvider.
      * 
-     * @param useDefaultFilters whether to register the default filters for
+     *  useDefaultFilters whether to register the default filters for
      *        the {@link Component @Component}, {@link Repository
      *        @Repository}, {@link Service @Service}, and
      *        {@link Controller @Controller} stereotype annotations
@@ -145,7 +145,7 @@ public class JadeDaoComponentProvider implements ResourceLoaderAware {
 
     /**
      * 
-     * @param useDefaultFilters
+     *  useDefaultFilters
      */
     public void resetFilters(boolean useDefaultFilters) {
         this.includeFilters.clear();
@@ -158,8 +158,8 @@ public class JadeDaoComponentProvider implements ResourceLoaderAware {
     /**
      * Scan the class path for candidate components.
      * 
-     * @param basePackage the package to check for annotated classes
-     * @return a corresponding Set of autodetected bean definitions
+     *  basePackage the package to check for annotated classes
+     *  a corresponding Set of autodetected bean definitions
      */
     public Set<BeanDefinition> findCandidateComponents(String uriPrefix) {
         if (!uriPrefix.endsWith("/")) {
@@ -237,8 +237,8 @@ public class JadeDaoComponentProvider implements ResourceLoaderAware {
      * Determine whether the given class does not match any exclude filter
      * and does match at least one include filter.
      * 
-     * @param metadataReader the ASM ClassReader for the class
-     * @return whether the class qualifies as a candidate component
+     *  metadataReader the ASM ClassReader for the class
+     *  whether the class qualifies as a candidate component
      */
     protected boolean isCandidateComponent(MetadataReader metadataReader) throws IOException {
         for (TypeFilter tf : this.excludeFilters) {
@@ -261,8 +261,8 @@ public class JadeDaoComponentProvider implements ResourceLoaderAware {
      * (i.e. not abstract and not an interface). Can be overridden in
      * subclasses.
      * 
-     * @param beanDefinition the bean definition to check
-     * @return whether the bean definition qualifies as a candidate
+     *  beanDefinition the bean definition to check
+     *  whether the bean definition qualifies as a candidate
      *         component
      */
     protected boolean isCandidateComponent(AnnotatedBeanDefinition beanDefinition) {

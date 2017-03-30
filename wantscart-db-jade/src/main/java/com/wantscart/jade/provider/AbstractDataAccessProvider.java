@@ -54,9 +54,9 @@ public abstract class AbstractDataAccessProvider implements DataAccessProvider {
     /**
      * 重载方法创建自己的 {@link DataAccess} 实现。
      * 
-     * @param dataSource - 数据源
+     *  dataSource - 数据源
      * 
-     * @return {@link DataAccess} 实现
+     *  {@link DataAccess} 实现
      */
     protected abstract DataAccess createDataAccess(DataSource dataSource);
 

@@ -26,7 +26,7 @@ public class InitialisationException extends Exception {
      * Constructs a <code>InitialisationException</code> with the specified
      * detail message.
      * 
-     * @param s the detail message.
+     *  s the detail message.
      */
     public InitialisationException(String s) {
         super(s);
@@ -44,7 +44,7 @@ public class InitialisationException extends Exception {
      * Constructs a <code>ConfigurationException</code> with the specified
      * detail message.
      * 
-     * @param s the detail message.
+     *  s the detail message.
      */
     public InitialisationException(String s, Throwable cause) {
         super(s, cause);

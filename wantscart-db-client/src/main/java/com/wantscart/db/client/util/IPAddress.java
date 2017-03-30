@@ -16,7 +16,7 @@ public final class IPAddress {
     /**
      * 获取本地网路ip地址.
      * 
-     * @return
+     *
      */
     public static final String getLocalAddress() {
         try {
@@ -41,7 +41,7 @@ public final class IPAddress {
     /**
      * 获取本机主机名称.
      * 
-     * @return
+     *
      */
     public static final String getLocalHostName() {
         try {

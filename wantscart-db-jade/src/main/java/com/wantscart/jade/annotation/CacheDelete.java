@@ -19,14 +19,14 @@ public @interface CacheDelete {
     /**
      * 标注需要清除的缓存 Pool
      * 
-     * @return 缓存 Pool
+     *  缓存 Pool
      */
     String pool() default "default";
 
     /**
      * 标注需要清除的缓存 Key.
      * 
-     * @return 缓存 Key
+     *  缓存 Key
      */
     String[] key();
 }

@@ -62,7 +62,7 @@ public class ExqlCompiler {
     /**
      * 创建语句编译器。
      * 
-     * @param pattern - 待编译的语句
+     *  pattern - 待编译的语句
      */
     public ExqlCompiler(String pattern) {
         this.pattern = pattern;
@@ -72,7 +72,7 @@ public class ExqlCompiler {
     /**
      * 执行编译动作。
      * 
-     * @return ExqlPattern 对象
+     *  ExqlPattern 对象
      */
     public ExqlPattern compile() {
         ExqlUnit unit = compileUnit();
@@ -92,7 +92,7 @@ public class ExqlCompiler {
      * 从语句编译出: ExqlUnit 对象。
      * 
      * 
-     * @return ExqlUnit 对象
+     *  ExqlUnit 对象
      */
     protected ExqlUnit compileUnit() {
 
@@ -288,10 +288,10 @@ public class ExqlCompiler {
      * 
      * 如果未找到匹配的左括号，函数返回 -1.
      * 
-     * @param chLeft - 匹配的左括号
-     * @param fromIndex - 查找的起始位置
+     *  chLeft - 匹配的左括号
+     *  fromIndex - 查找的起始位置
      * 
-     * @return 左括号的位置, 如果未找到匹配的左括号，函数返回 -1.
+     *  左括号的位置, 如果未找到匹配的左括号，函数返回 -1.
      */
     private int findLeftBrace(char chLeft, int fromIndex) {
 
@@ -319,12 +319,12 @@ public class ExqlCompiler {
      * 
      * 如果未找到匹配的右括号，函数返回 -1.
      * 
-     * @param string - 查找的字符串
-     * @param chLeft - 匹配的左括号
-     * @param chRight - 匹配的右括号
-     * @param fromIndex - 查找的起始位置
+     *  string - 查找的字符串
+     *  chLeft - 匹配的左括号
+     *  chRight - 匹配的右括号
+     *  fromIndex - 查找的起始位置
      * 
-     * @return 右括号的位置, 如果未找到匹配的右括号，函数返回 -1.
+     *  右括号的位置, 如果未找到匹配的右括号，函数返回 -1.
      */
     private int findRightBrace(char chLeft, char chRight, int fromIndex) {
 
@@ -360,10 +360,10 @@ public class ExqlCompiler {
      * 
      * 如果有匹配的括号, 返回后的当前位置指向匹配的右括号后一个字符。
      * 
-     * @param chLeft - 匹配的左括号
-     * @param chRight - 匹配的右括号
+     *  chLeft - 匹配的左括号
+     *  chRight - 匹配的右括号
      * 
-     * @return 返回括号内容, 如果没有括号匹配, 返回 <code>null</code>.
+     *  返回括号内容, 如果没有括号匹配, 返回 <code>null</code>.
      */
     private String findBrace(char chLeft, char chRight) {
 
@@ -391,7 +391,7 @@ public class ExqlCompiler {
      * 
      * 如果有匹配的: {...}, 编译后, 当前位置指向匹配的右括号后一个字符。
      * 
-     * @return ExqlUnit, 如果没有: {...} 匹配, 返回 <code>null</code>.
+     *  ExqlUnit, 如果没有: {...} 匹配, 返回 <code>null</code>.
      */
     private ExqlUnit compileBlock() {
 
@@ -412,10 +412,10 @@ public class ExqlCompiler {
      * 
      * 如果匹配成功, 当前位置是关键字最后一个字符之后。
      * 
-     * @param keyword - 匹配的关键字
-     * @param fromIndex - 查找的起始位置
+     *  keyword - 匹配的关键字
+     *  fromIndex - 查找的起始位置
      * 
-     * @return true / false
+     *  true / false
      */
     private boolean match(String keyword, int fromIndex) {
 

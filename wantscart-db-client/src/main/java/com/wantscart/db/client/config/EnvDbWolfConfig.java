@@ -39,7 +39,7 @@ public class EnvDbWolfConfig extends DbWolfConfig {
     /**
      * 获取Zookeeper 连接串，优先从JVM环境变量获取，系统环境变量次之，配置文件中的registry.properties，最后是默认值
      * 
-     * @return Zookeeper 连接串
+     *  Zookeeper 连接串
      */
     private String getEnvEndpoints() {
         String endpoints = null;
@@ -64,7 +64,7 @@ public class EnvDbWolfConfig extends DbWolfConfig {
     /**
      * 获取具体的JdbcDataSourceFactory实现类，优先从JVM环境变量获取，系统环境变量次之，最后是默认值
      * 
-     * @return
+     *
      */
     private String getEnvZKRoot() {
         String zkRoot = null;
@@ -79,7 +79,7 @@ public class EnvDbWolfConfig extends DbWolfConfig {
     /**
      * 获取具体的JdbcDataSourceFactory实现类，优先从JVM环境变量获取，系统环境变量次之，最后是默认值
      * 
-     * @return
+     *
      */
     private String getEnvDsfactory() {
         String dsFactory = null;
@@ -94,7 +94,7 @@ public class EnvDbWolfConfig extends DbWolfConfig {
     /**
      * 除非明确指明为Dev，否则是Production
      * 
-     * @return
+     *
      */
     private boolean isDevEnv() {
         // Default:Production Env

@@ -12,11 +12,11 @@ public interface ExqlPattern {
     /**
      * 输出全部的语句内容。
      * 
-     * @param context - 输出上下文
+     *  context - 输出上下文
      * 
-     * @param map - 参数表
+     *  map - 参数表
      * 
-     * @return 语句内容
+     *  语句内容
      * 
      * @throws Exception
      */
@@ -25,12 +25,12 @@ public interface ExqlPattern {
     /**
      * 输出全部的语句内容。
      * 
-     * @param context - 输出上下文
+     *  context - 输出上下文
      * 
-     * @param mapVars - 参数表
-     * @param mapConsts - 常量表
+     *  mapVars - 参数表
+     *  mapConsts - 常量表
      * 
-     * @return 语句内容
+     *  语句内容
      * 
      * @throws Exception
      */

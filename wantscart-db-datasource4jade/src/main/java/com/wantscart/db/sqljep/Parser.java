@@ -94,8 +94,8 @@ public abstract class Parser/*@bgen(jjtree)*/implements ParserTreeConstants, Par
      * Millar's unescape() method in rcm.util.Str fron the Web Sphinx
      * project.
      * 
-     * @param inputStr String containing escape characters.
-     * @return String with all escape sequences replaced.
+     *  inputStr String containing escape characters.
+     *  String with all escape sequences replaced.
      */
     private static String replaceEscape(String inputStr) {
         int len = inputStr.length();

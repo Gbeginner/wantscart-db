@@ -43,7 +43,7 @@ public @interface SQLParam {
     /**
      * 指出这个值是 SQL 语句中哪个参数的值
      * 
-     * @return 对应 SQL 语句中哪个参数
+     *  对应 SQL 语句中哪个参数
      */
     String value();
 }

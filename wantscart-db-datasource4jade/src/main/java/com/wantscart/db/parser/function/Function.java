@@ -29,14 +29,14 @@ public interface Function {
     /**
      * 获得函数名称
      * 
-     * @return
+     *
      */
     public String getName();
 
     /**
      * 设置函数名称
      * 
-     * @param name
+     *  name
      */
     public void setName(String name);
 

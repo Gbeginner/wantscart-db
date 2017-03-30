@@ -31,12 +31,12 @@ public interface DataAccess {
     /**
      * 执行 SELECT 语句。
      * 
-     * @param jadeSQL - 执行的语句
-     * @param modifier - 语句修饰
-     * @param parameters - 参数
-     * @param rowMapper - 对象映射方式
+     *  jadeSQL - 执行的语句
+     *  modifier - 语句修饰
+     *  parameters - 参数
+     *  rowMapper - 对象映射方式
      * 
-     * @return 返回的对象列表
+     *  返回的对象列表
      */
     public List<?> select(String jadeSQL, Modifier modifier, Map<String, Object> parameters,
             RowMapper rowMapper);
@@ -44,20 +44,20 @@ public interface DataAccess {
     /**
      * 执行 UPDATE / DELETE 语句。
      * 
-     * @param jadeSQL - 执行的语句
-     * @param modifier - 语句修饰
-     * @param parameters - 参数
+     *  jadeSQL - 执行的语句
+     *  modifier - 语句修饰
+     *  parameters - 参数
      * 
-     * @return 更新的记录数目
+     *  更新的记录数目
      */
     public int update(String jadeSQL, Modifier modifier, Map<String, Object> parameters);
 
     /**
      * 
-     * @param jadeSQL
-     * @param modifier
-     * @param parametersList
-     * @return
+     *  jadeSQL
+     *  modifier
+     *  parametersList
+     *
      */
     public int[] batchUpdate(String jadeSQL, Modifier modifier,
             List<Map<String, Object>> parametersList);
@@ -65,11 +65,11 @@ public interface DataAccess {
     /**
      * 执行 INSERT 语句，并返回插入对象的 ID.
      * 
-     * @param jadeSQL - 执行的语句
-     * @param modifier - 语句修饰
-     * @param parameters - 参数
+     *  jadeSQL - 执行的语句
+     *  modifier - 语句修饰
+     *  parameters - 参数
      * 
-     * @return 插入对象的 ID
+     *  插入对象的 ID
      */
     public Object insertReturnId(String jadeSQL, Modifier modifier, Map<String, Object> parameters);
 }

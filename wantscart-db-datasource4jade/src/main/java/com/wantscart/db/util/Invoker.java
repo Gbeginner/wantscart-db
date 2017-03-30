@@ -207,8 +207,8 @@ public class Invoker extends LoopingThread {
     /**
      * Called before we process an invoker unit.
      * 
-     * @param unit the unit about to be invoked.
-     * @param start a timestamp recorded immediately before invocation if
+     *  unit the unit about to be invoked.
+     *  start a timestamp recorded immediately before invocation if
      *        {@link #PERF_TRACK} is enabled, 0L otherwise.
      */
     protected void willInvokeUnit(Unit unit, long start) {
@@ -217,8 +217,8 @@ public class Invoker extends LoopingThread {
     /**
      * Called before we process an invoker unit.
      * 
-     * @param unit the unit about to be invoked.
-     * @param start a timestamp recorded immediately before invocation if
+     *  unit the unit about to be invoked.
+     *  start a timestamp recorded immediately before invocation if
      *        {@link #PERF_TRACK} is enabled, 0L otherwise.
      */
     protected void didInvokeUnit(Unit unit, long start) {

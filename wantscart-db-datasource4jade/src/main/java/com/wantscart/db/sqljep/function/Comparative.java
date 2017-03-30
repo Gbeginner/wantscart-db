@@ -24,8 +24,8 @@ public class Comparative implements Comparable, Cloneable {
     /**
      * 表达式取反
      * 
-     * @param function
-     * @return
+     *  function
+     *
      */
     public static int reverseComparison(int function) {
         return 9 - function;
@@ -34,8 +34,8 @@ public class Comparative implements Comparable, Cloneable {
     /**
      * 表达式前后位置调换的时候
      * 
-     * @param function
-     * @return
+     *  function
+     *
      */
     public static int exchangeComparison(int function) {
         if (function == GreaterThan) {

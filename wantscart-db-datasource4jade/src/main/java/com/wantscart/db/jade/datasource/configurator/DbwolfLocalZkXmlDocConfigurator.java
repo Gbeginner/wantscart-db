@@ -54,7 +54,7 @@ public class DbwolfLocalZkXmlDocConfigurator extends XmlDocConfigurator {
 
     /**
      * 
-     * @return
+     *
      */
     private void retriveJadeConfig() {
         try {
@@ -91,7 +91,7 @@ public class DbwolfLocalZkXmlDocConfigurator extends XmlDocConfigurator {
     /**
      * 监听Jade配置.
      *
-     * @param
+     *
      */
     private void watchJadeConfig() {
         final String path = JADE_CONFIG_PATH;
@@ -116,8 +116,8 @@ public class DbwolfLocalZkXmlDocConfigurator extends XmlDocConfigurator {
     /**
      * 读取网址内容存入文件。
      * 
-     * @param jadeConfigContent - JadeConfig内容
-     * @param file - 存入的文件
+     *  jadeConfigContent - JadeConfig内容
+     *  file - 存入的文件
      */
     private void saveToFile(byte[] jadeConfigContent, File file) {
         // 创建文件的目录
@@ -176,7 +176,7 @@ public class DbwolfLocalZkXmlDocConfigurator extends XmlDocConfigurator {
     /**
      * 返回从本地加载的文件路径。
      * 
-     * @return 从本地加载的文件路径
+     *  从本地加载的文件路径
      */
     private File getLocalLoadingFile() {
 

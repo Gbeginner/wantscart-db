@@ -128,7 +128,7 @@ public class SQLParseInfo {
     /**
      * 获取解析的原始语句。
      * 
-     * @return 原始语句
+     *  原始语句
      */
     public String getSQL() {
         return sql;
@@ -137,7 +137,7 @@ public class SQLParseInfo {
     /**
      * 检查解析信息是否已经初始化。
      * 
-     * @return 解析信息是否初始化
+     *  解析信息是否初始化
      */
     public boolean isInited() {
         return inited;
@@ -146,7 +146,7 @@ public class SQLParseInfo {
     //    /**
     //     * 检查语句解析是否失败。
     //     * 
-    //     * @return 语句解析是否失败
+    //     *  语句解析是否失败
     //     */
     //    public boolean isParsingFailed() {
     //        return parsingFailed;
@@ -239,7 +239,7 @@ public class SQLParseInfo {
     /**
      * 检查是否为: INSERT / UPDATE / DELETE / SELECT 语句。
      * 
-     * @return 是否为数据操作语句
+     *  是否为数据操作语句
      */
     public boolean isDML() {
         return dml;
@@ -248,7 +248,7 @@ public class SQLParseInfo {
     /**
      * 检查是否为 : SELECT 语句。
      * 
-     * @return 是否为查询语句
+     *  是否为查询语句
      */
     public boolean isSelect() {
         return select;
@@ -257,7 +257,7 @@ public class SQLParseInfo {
     /**
      * 检查是否为 : INSERT 语句。
      * 
-     * @return 是否为查询语句
+     *  是否为查询语句
      */
     public boolean isInsert() {
         return insert;
@@ -266,7 +266,7 @@ public class SQLParseInfo {
     /**
      * 检查是否为 : UPDATE 语句。
      * 
-     * @return 是否为查询语句
+     *  是否为查询语句
      */
     public boolean isUpdate() {
         return update;
@@ -275,7 +275,7 @@ public class SQLParseInfo {
     /**
      * 检查是否为 : DELETE 语句。
      * 
-     * @return 是否为查询语句
+     *  是否为查询语句
      */
     public boolean isDelete() {
         return delete;
@@ -285,7 +285,7 @@ public class SQLParseInfo {
      * 检查是否特殊查询，特殊查询是类似： SELECT @@LAST_INSERT_ID / SELECT LAST_INSERT_ID()
      * / SELECT FOUND_ROWS() 此类的查询，必须与前一个查询连用。
      * 
-     * @return 是否特殊查询
+     *  是否特殊查询
      */
     public boolean isUnswitch() {
 
@@ -296,7 +296,7 @@ public class SQLParseInfo {
     /**
      * 返回查询的数据表。
      * 
-     * @return 查询的数据表
+     *  查询的数据表
      */
     public Table[] getTables() {
         return tables;
@@ -305,7 +305,7 @@ public class SQLParseInfo {
     /**
      * 返回参数数目。
      * 
-     * @return 参数数目
+     *  参数数目
      */
     public int getParamCount() {
         return paramCount;
@@ -314,9 +314,9 @@ public class SQLParseInfo {
     /**
      * 返回指定列的索引位置。
      * 
-     * @param column - 指定列
+     *  column - 指定列
      * 
-     * @return 列的索引位置，从0开始
+     *  列的索引位置，从0开始
      */
     public int getColumnIndex(Column column) {
 
@@ -332,9 +332,9 @@ public class SQLParseInfo {
     /**
      * 检查对应列的查询参数是否存在。
      * 
-     * @param column - 对应的列
+     *  column - 对应的列
      * 
-     * @return 参数是否存在
+     *  参数是否存在
      */
     public boolean containsParam(Column column) {
 
@@ -344,9 +344,9 @@ public class SQLParseInfo {
     /**
      * 获得对应列的参数值。
      * 
-     * @param column - 对应的列
+     *  column - 对应的列
      * 
-     * @return 参数值
+     *  参数值
      */
     public Object getParam(Column column) {
 
@@ -356,7 +356,7 @@ public class SQLParseInfo {
     /**
      * 获得内部函数映射表。
      * 
-     * @return 内部函数映射表
+     *  内部函数映射表
      */
     public static Map<String, Function> getFunctionMap() {
         return functionMap;
@@ -416,9 +416,9 @@ public class SQLParseInfo {
     /**
      * 处理生成的表达式。
      * 
-     * @param expr - 生成的表达式
+     *  expr - 生成的表达式
      * 
-     * @param column - 当前的列, 可能为 <code>null</code>.
+     *  column - 当前的列, 可能为 <code>null</code>.
      */
     protected void parseExpr(Expression expr, Column column) {
 

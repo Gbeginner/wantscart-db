@@ -14,14 +14,14 @@ public interface JadeOperation {
 
     /**
      * 
-     * @return
+     *
      */
     public Modifier getModifier();
 
     /**
      * 执行所需的数据库操作。
      * 
-     * @return
+     *
      */
     public Object execute(Map<String, Object> parameters);
 }

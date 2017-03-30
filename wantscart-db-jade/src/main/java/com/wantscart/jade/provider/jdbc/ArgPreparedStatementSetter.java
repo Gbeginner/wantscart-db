@@ -38,7 +38,7 @@ public class ArgPreparedStatementSetter implements PreparedStatementSetter, Para
     /**
      * Create a new ArgPreparedStatementSetter for the given arguments.
      * 
-     * @param args the arguments to set
+     *  args the arguments to set
      */
     public ArgPreparedStatementSetter(Object[] args) {
         this.args = args;

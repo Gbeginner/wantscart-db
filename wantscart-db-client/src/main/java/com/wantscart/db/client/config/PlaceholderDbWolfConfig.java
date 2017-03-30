@@ -46,21 +46,21 @@ public class PlaceholderDbWolfConfig extends DbWolfConfig {
     }
 
     /**
-     * @param endpoints the endpoints to set
+     *  endpoints the endpoints to set
      */
     public void setEndpoints(String endpoints) {
         this.endpoints = endpoints;
     }
 
     /**
-     * @param dsFactoryClz the dsFactoryClz to set
+     *  dsFactoryClz the dsFactoryClz to set
      */
     public void setDsFactoryClz(String dsFactoryClz) {
         this.dsFactoryClz = dsFactoryClz;
     }
 
     /**
-     * @param zkRoot the zkRoot to set
+     *  zkRoot the zkRoot to set
      */
     public void setZkRoot(String zkRoot) {
         this.zkRoot = zkRoot;

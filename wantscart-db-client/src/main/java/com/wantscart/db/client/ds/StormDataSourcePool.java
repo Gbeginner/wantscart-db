@@ -11,23 +11,23 @@ public interface StormDataSourcePool {
     /**
      * 获取一个只写数据源.
      * 
-     * @param pattern 匹配模式，正则形式
-     * @return 数据源实例
+     *  pattern 匹配模式，正则形式
+     *  数据源实例
      */
     public DataSource getWriteableDs(final String pattern);
 
     /**
      * 获取一个只读数据源.
      * 
-     * @param pattern 匹配模式，正则形式
-     * @return 数据源实例
+     *  pattern 匹配模式，正则形式
+     *  数据源实例
      */
     public DataSource getReadableDs(final String pattern);
 
     /**
      * 获取数据源配置时间戳.
      * 
-     * @return 时间戳
+     *  时间戳
      */
     public long getTimeStamp();
 

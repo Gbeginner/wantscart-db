@@ -17,7 +17,7 @@ public final class ConnectionManager {
     /**
      * 创建一个连接管理器.
      * 
-     * @param agent
+     *  agent
      */
     ConnectionManager(DbAgent agent) {
         this.agent = agent;
@@ -27,8 +27,8 @@ public final class ConnectionManager {
      * 获取不可路由数据服务的一个只读数据连接. <br>
      * <strong>注意：</strong>使用前请确认pattern对应的数据库确实是可读的
      * 
-     * @param db 数据服务名称
-     * @return jdbc连接
+     *  db 数据服务名称
+     *  jdbc连接
      * @throws SQLException
      */
     public Connection getReadConnection(String db) throws SQLException {
@@ -40,8 +40,8 @@ public final class ConnectionManager {
      * 从可路由数据服务中寻找指定pattern对应的具体数据库，然后获取一个只读数据库连接. <br>
      * <strong>注意：</strong>使用前请确认pattern对应的数据库确实是可读的
      * 
-     * @param db 数据服务名称
-     * @return jdbc连接
+     *  db 数据服务名称
+     *  jdbc连接
      * @throws SQLException
      */
     public Connection getReadConnection(String db, String pattern) throws SQLException {
@@ -52,8 +52,8 @@ public final class ConnectionManager {
      * 获取不可路由数据服务的一个只写数据连接. <br>
      * <strong>注意：</strong>使用前请确认pattern对应的数据库确实是可写的
      * 
-     * @param db 数据服务名称
-     * @return jdbc连接
+     *  db 数据服务名称
+     *  jdbc连接
      * @throws SQLException
      */
     public Connection getWriteConnection(String db) throws SQLException {
@@ -64,8 +64,8 @@ public final class ConnectionManager {
      * 从可路由数据服务中寻找指定pattern对应的具体数据库，然后获取一个只写数据库连接. <br>
      * <strong>注意：</strong>使用前请确认pattern对应的数据库确实是可写的
      * 
-     * @param db 数据服务名称
-     * @return jdbc连接
+     *  db 数据服务名称
+     *  jdbc连接
      * @throws SQLException
      */
     public Connection getWriteConnection(String db, String pattern) throws SQLException {
@@ -77,8 +77,8 @@ public final class ConnectionManager {
      * 此方法用于应对高实时性的数据服务，如果你希望数据在写入数据库后立刻可以读取，那么应当考虑使用此方法。 <br>
      * <strong>注意：</strong>使用前请确认pattern对应的数据库确实是可读写的。
      * 
-     * @param db 数据服务名称
-     * @return jdbc连接
+     *  db 数据服务名称
+     *  jdbc连接
      * @throws SQLException
      */
     public Connection getReadAndWriteConnection(String db, String pattern) throws SQLException {

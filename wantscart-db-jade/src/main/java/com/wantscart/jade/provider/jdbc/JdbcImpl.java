@@ -80,10 +80,10 @@ public class JdbcImpl implements Jdbc {
     /**
      * 执行 INSERT 语句，并返回插入对象的 ID.
      * 
-     * @param sql - 执行的语句
-     * @param args - 参数
+     *  sql - 执行的语句
+     *  args - 参数
      * 
-     * @return 插入对象的 ID
+     *  插入对象的 ID
      */
     @Override
     public Object insertAndReturnId(Modifier modifier, String sql, Object[] args) {

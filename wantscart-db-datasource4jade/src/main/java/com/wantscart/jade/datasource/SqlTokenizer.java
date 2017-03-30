@@ -29,7 +29,7 @@ public class SqlTokenizer {
     /**
      * SqlTokenizer 对象。
      * 
-     * @param sql - 拆分的语句
+     *  sql - 拆分的语句
      */
     public SqlTokenizer(String sql) {
 
@@ -41,9 +41,9 @@ public class SqlTokenizer {
     /**
      * SqlTokenizer 对象。
      * 
-     * @param sql - 拆分的语句
+     *  sql - 拆分的语句
      * 
-     * @param offset - 拆分的起始位置
+     *  offset - 拆分的起始位置
      */
     public SqlTokenizer(String sql, int offset) {
 
@@ -55,7 +55,7 @@ public class SqlTokenizer {
     /**
      * 设置拆分括号内容。
      * 
-     * @param unwrapBracket - 拆分括号内容
+     *  unwrapBracket - 拆分括号内容
      */
     public void setUnwrapBracket(boolean unwrapBracket) {
         this.unwrapBracket = unwrapBracket;
@@ -64,7 +64,7 @@ public class SqlTokenizer {
     /**
      * 设置返回比较符号。
      * 
-     * @param unwrapBracket - 返回比较符号
+     *  unwrapBracket - 返回比较符号
      */
     public void setWantedComparison(boolean wantedComparison) {
         this.wantedComparison = wantedComparison;
@@ -73,7 +73,7 @@ public class SqlTokenizer {
     /**
      * 设置返回运算符。
      * 
-     * @param unwrapBracket - 返回运算符
+     *  unwrapBracket - 返回运算符
      */
     public void setWantedOperator(boolean wantedOperator) {
         this.wantedOperator = wantedOperator;
@@ -82,7 +82,7 @@ public class SqlTokenizer {
     /**
      * 设置返回括号字符。
      * 
-     * @param unwrapBracket - 返回括号字符
+     *  unwrapBracket - 返回括号字符
      */
     public void setWantedBracket(boolean wantedBracket) {
         this.wantedBracket = wantedBracket;
@@ -91,7 +91,7 @@ public class SqlTokenizer {
     /**
      * 设置返回逗号字符。
      * 
-     * @param wantedComma - 返回逗号字符
+     *  wantedComma - 返回逗号字符
      */
     public void setWantedComma(boolean wantedComma) {
         this.wantedComma = wantedComma;
@@ -100,7 +100,7 @@ public class SqlTokenizer {
     /**
      * 返回当前解析的语句。
      * 
-     * @return 当前解析的语句
+     *  当前解析的语句
      */
     public String getSql() {
 
@@ -110,7 +110,7 @@ public class SqlTokenizer {
     /**
      * 返回当前的解析位置。
      * 
-     * @return 当前的解析位置
+     *  当前的解析位置
      */
     public int getOffset() {
 
@@ -120,7 +120,7 @@ public class SqlTokenizer {
     /**
      * 检查是否剩下更多内容。
      * 
-     * @return 是否剩下更多内容
+     *  是否剩下更多内容
      */
     public boolean moreTokens() {
 
@@ -158,7 +158,7 @@ public class SqlTokenizer {
      * 如果没有下一条内容，返回值是 <code>null</code>. 如果事先调用 moreTokens() 返回
      * <code>true</code> 就不会出现这种情况。
      * 
-     * @return 下一个内容
+     *  下一个内容
      */
     public String nextToken() {
 
@@ -380,9 +380,9 @@ public class SqlTokenizer {
     /**
      * 从语句中查找下一个内容。
      * 
-     * @param keyword - 查找的内容
+     *  keyword - 查找的内容
      * 
-     * @return 是否找到内容
+     *  是否找到内容
      */
     public boolean findToken(String keyword) {
 
@@ -403,7 +403,7 @@ public class SqlTokenizer {
     /**
      * 检查语句中的引号。
      * 
-     * @param quoteChar - 作为引号的标记
+     *  quoteChar - 作为引号的标记
      */
     protected void nextQuote(char quoteChar) {
 
@@ -431,8 +431,8 @@ public class SqlTokenizer {
     /**
      * 检查语句中的括号，包括其中的嵌套括号。
      * 
-     * @param bracketLeft - 左侧括号
-     * @param bracketRight - 右侧括号
+     *  bracketLeft - 左侧括号
+     *  bracketRight - 右侧括号
      */
     protected void nextBracket(char bracketLeft, char bracketRight) {
 
@@ -517,9 +517,9 @@ public class SqlTokenizer {
     /**
      * 检查指定的字符是不是运算符号。
      * 
-     * @param ch - 指定的字符
+     *  ch - 指定的字符
      * 
-     * @return 字符是不是运算符号
+     *  字符是不是运算符号
      */
     private static boolean isOperator(char ch) {
 
@@ -529,9 +529,9 @@ public class SqlTokenizer {
     /**
      * 检查指定的字符是不是比较符号。
      * 
-     * @param ch - 指定的字符
+     *  ch - 指定的字符
      * 
-     * @return 字符是不是比较符号
+     *  字符是不是比较符号
      */
     private static boolean isComparison(char ch) {
 

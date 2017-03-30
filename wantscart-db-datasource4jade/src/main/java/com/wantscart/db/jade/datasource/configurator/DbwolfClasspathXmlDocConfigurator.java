@@ -34,7 +34,7 @@ public class DbwolfClasspathXmlDocConfigurator extends DbwolfXmlDocConfigurator 
     }
 
     /**
-     * @return
+     *
      */
     private void retriveJadeConfig() {
         try {

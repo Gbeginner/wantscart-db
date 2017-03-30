@@ -69,8 +69,8 @@ public final class FileDbAgent implements DbAgent {
     /**
      * 获取数据源.
      *
-     * @param db 数据服务名称
-     * @return jdbc数据源池
+     *  db 数据服务名称
+     *  jdbc数据源池
      */
     // 严重bug和问题: (fixed)
     // 1.没有与其他调用comparerAndReloadStormDs方法的地点形成同步
@@ -91,7 +91,7 @@ public final class FileDbAgent implements DbAgent {
     /**
      * 重载数据库配置.
      *
-     * @param config
+     *  config
      */
     private synchronized void compareAndReload(final DbInstanceConfig config) {
         log.debug("reload db config " + config.toString());
@@ -111,8 +111,8 @@ public final class FileDbAgent implements DbAgent {
     /**
      * 检索数据库配置.
      *
-     * @param db
-     * @return
+     *  db
+     *
      * @throws DbNotDefinedException 数据未定义或定义不完整
      */
     private DbInstanceConfig retriveDbConfig(final String db) throws DbNotDefinedException {

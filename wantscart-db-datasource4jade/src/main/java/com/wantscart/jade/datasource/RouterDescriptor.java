@@ -12,7 +12,7 @@ public class RouterDescriptor extends DirectRoutingDescriptor {
     /**
      * 创建包含路由的散表配置项。
      * 
-     * @param dbName - 数据源名称
+     *  dbName - 数据源名称
      */
     public RouterDescriptor(String dbName) {
         super(dbName);
@@ -26,7 +26,7 @@ public class RouterDescriptor extends DirectRoutingDescriptor {
     /**
      * 设置散库的路由。
      * 
-     * @param dbRouter - 散库的路由
+     *  dbRouter - 散库的路由
      */
     public void setDbRouter(Router dbRouter) {
         this.dbRouter = dbRouter;
@@ -40,7 +40,7 @@ public class RouterDescriptor extends DirectRoutingDescriptor {
     /**
      * 设置散表的路由。
      * 
-     * @param tableRouter - 散表的路由
+     *  tableRouter - 散表的路由
      */
     public void setTableRouter(Router tableRouter) {
         this.tableRouter = tableRouter;

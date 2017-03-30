@@ -92,8 +92,8 @@ public final class ZkDbAgent implements DbAgent {
     /**
      * 获取数据源.
      * 
-     * @param db 数据服务名称
-     * @return jdbc数据源池
+     *  db 数据服务名称
+     *  jdbc数据源池
      */
     // 严重bug和问题: (fixed)
     // 1.没有与其他调用comparerAndReloadStormDs方法的地点形成同步
@@ -117,7 +117,7 @@ public final class ZkDbAgent implements DbAgent {
     /**
      * 重载数据库配置.
      * 
-     * @param config
+     *  config
      */
     private synchronized void compareAndReload(final DbInstanceConfig config) {
         log.debug("reload db config " + config.toString());
@@ -161,7 +161,7 @@ public final class ZkDbAgent implements DbAgent {
     /**
      * 在服务端注册客户端信息.
      * 
-     * @param db
+     *  db
      */
     private void registerClient(final String db) {
         final String path = cacuDbPath(db);
@@ -198,7 +198,7 @@ public final class ZkDbAgent implements DbAgent {
     /**
      * 监听数据库配置.
      * 
-     * @param db
+     *  db
      */
     private void watchDbConfig(final String db) {
         final String path = cacuDbPath(db);
@@ -225,8 +225,8 @@ public final class ZkDbAgent implements DbAgent {
     /**
      * 根据db名称构造zookeeper path.
      * 
-     * @param db
-     * @return
+     *  db
+     *
      */
     private String cacuDbPath(final String db) {
         return dbWolfConfig.getZkRoot() + "/" + db;
@@ -235,8 +235,8 @@ public final class ZkDbAgent implements DbAgent {
     /**
      * 检索数据库配置.
      * 
-     * @param db
-     * @return
+     *  db
+     *
      * @throws DbNotDefinedException 数据未定义或定义不完整
      */
     private DbInstanceConfig retriveDbConfig(final String db) throws DbNotDefinedException {

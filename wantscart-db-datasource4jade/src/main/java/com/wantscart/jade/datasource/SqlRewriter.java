@@ -15,12 +15,12 @@ public class SqlRewriter {
     /**
      * 重写所给的语句，并且将旧的表名替换成新的表名。
      * 
-     * @param sql - 重写的语句
+     *  sql - 重写的语句
      * 
-     * @param oldName - 旧数据表名
-     * @param newName - 新数据表名
+     *  oldName - 旧数据表名
+     *  newName - 新数据表名
      * 
-     * @return 重写后的语句
+     *  重写后的语句
      */
     public static String rewriteSqlTable(String sql, String oldName, String newName) {
         // 以__开始以及结束的，表示要替换为新的表名
@@ -60,12 +60,12 @@ public class SqlRewriter {
     /**
      * 重写所给的 INSERT / REPLACE 语句，并且将旧的表名替换成新的表名。
      * 
-     * @param tokenizer - 解析的 INSERT 语句
+     *  tokenizer - 解析的 INSERT 语句
      * 
-     * @param oldName - 旧数据表名
-     * @param newName - 新数据表名
+     *  oldName - 旧数据表名
+     *  newName - 新数据表名
      * 
-     * @return 重写后的语句
+     *  重写后的语句
      */
     private static String rewriteInsertTable(SqlTokenizer tokenizer, String oldName, String newName) {
 
@@ -181,12 +181,12 @@ public class SqlRewriter {
     /**
      * 重写所给的 UPDATE 语句，并且将旧的表名替换成新的表名。
      * 
-     * @param tokenizer - 解析的 UPDATE 语句
+     *  tokenizer - 解析的 UPDATE 语句
      * 
-     * @param oldName - 旧数据表名
-     * @param newName - 新数据表名
+     *  oldName - 旧数据表名
+     *  newName - 新数据表名
      * 
-     * @return 重写后的语句
+     *  重写后的语句
      */
     private static String rewriteUpdateTable(SqlTokenizer tokenizer, String oldName, String newName) {
 
@@ -268,12 +268,12 @@ public class SqlRewriter {
     /**
      * 重写所给的 SELECT 语句，并且将旧的表名替换成新的表名。
      * 
-     * @param tokenizer - 解析的 SELECT 语句
+     *  tokenizer - 解析的 SELECT 语句
      * 
-     * @param oldName - 旧数据表名
-     * @param newName - 新数据表名
+     *  oldName - 旧数据表名
+     *  newName - 新数据表名
      * 
-     * @return 重写后的语句
+     *  重写后的语句
      */
     private static String rewriteSelectTable(SqlTokenizer tokenizer, String oldName, String newName) {
 
@@ -410,12 +410,12 @@ public class SqlRewriter {
     /**
      * 重写所给的 DELETE 语句，并且将旧的表名替换成新的表名。
      * 
-     * @param tokenizer - 解析的 DELETE 语句
+     *  tokenizer - 解析的 DELETE 语句
      * 
-     * @param oldName - 旧数据表名
-     * @param newName - 新数据表名
+     *  oldName - 旧数据表名
+     *  newName - 新数据表名
      * 
-     * @return 重写后的语句
+     *  重写后的语句
      */
     private static String rewriteDeleteTable(SqlTokenizer tokenizer, String oldName, String newName) {
 

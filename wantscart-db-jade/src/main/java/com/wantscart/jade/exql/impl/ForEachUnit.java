@@ -21,9 +21,9 @@ public class ForEachUnit implements ExqlUnit {
     /**
      * 构造循环输出的语句单元。
      * 
-     * @param expr - 集合表达式
-     * @param variant - 循环临时变量名
-     * @param unit - 需要循环输出的单元
+     *  expr - 集合表达式
+     *  variant - 循环临时变量名
+     *  unit - 需要循环输出的单元
      */
     public ForEachUnit(String expr, String variant, ExqlUnit unit) {
         this.expr = expr;

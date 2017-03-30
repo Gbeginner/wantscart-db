@@ -36,7 +36,7 @@ public interface RowMapperFactory {
     /**
      * 根据DAO方法的返回类型定义，解析可能存在的泛型，创建对应的行映射器对象。
      * 
-     * @return 如果无法解析时可返回null
+     *  如果无法解析时可返回null
      */
     public RowMapper getRowMapper(Modifier modifier);
 }

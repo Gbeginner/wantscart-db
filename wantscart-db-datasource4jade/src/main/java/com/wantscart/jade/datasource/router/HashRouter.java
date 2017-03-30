@@ -24,9 +24,9 @@ public class HashRouter implements Router {
     /**
      * 创建配置记录。
      * 
-     * @param column - 配置的列
-     * @param pattern - 数据表的名称模板
-     * @param count - 散列表数目
+     *  column - 配置的列
+     *  pattern - 数据表的名称模板
+     *  count - 散列表数目
      */
     public HashRouter(String column, String pattern, int count) {
         this.column = column;
@@ -42,7 +42,7 @@ public class HashRouter implements Router {
     /**
      * 设置配置的列。
      * 
-     * @param column - 配置的列
+     *  column - 配置的列
      */
     public void setColumn(String column) {
         this.column = column;
@@ -51,7 +51,7 @@ public class HashRouter implements Router {
     /**
      * 返回数据表的名称模板。
      * 
-     * @return 数据表的名称模板
+     *  数据表的名称模板
      */
     public String getPattern() {
         return pattern;
@@ -60,7 +60,7 @@ public class HashRouter implements Router {
     /**
      * 设置数据表的名称模板。
      * 
-     * @param pattern - 数据表的名称模板
+     *  pattern - 数据表的名称模板
      */
     public void setPattern(String pattern) {
         this.pattern = pattern;
@@ -69,7 +69,7 @@ public class HashRouter implements Router {
     /**
      * 返回散列表数目。
      * 
-     * @return 散列表数目
+     *  散列表数目
      */
     public int getCount() {
         return count;
@@ -78,7 +78,7 @@ public class HashRouter implements Router {
     /**
      * 设置散列表数目。
      * 
-     * @param count - 散列表数目
+     *  count - 散列表数目
      */
     public void setCount(int count) {
         this.count = count;

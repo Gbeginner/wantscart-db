@@ -12,14 +12,14 @@ public interface SQLInterpreterResult {
     /**
      * 返回真正的SQL语句
      * 
-     * @return
+     *
      */
     String getSQL();
 
     /**
      * 返回参数列表
      * 
-     * @return
+     *
      */
     Object[] getParameters();
 }

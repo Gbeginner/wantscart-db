@@ -13,7 +13,7 @@ public interface JadeOperationFactory {
     /**
      * 创建: {@link JadeOperation} 对象。
      * 
-     * @return {@link JadeOperation} 对象
+     *  {@link JadeOperation} 对象
      */
     public JadeOperation getOperation(DataAccess dataAccess, Modifier modifier);
 }

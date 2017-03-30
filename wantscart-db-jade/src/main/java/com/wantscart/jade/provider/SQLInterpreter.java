@@ -21,12 +21,12 @@ public interface SQLInterpreter {
 
     /**
      * 
-     * @param dataSource
-     * @param sql
-     * @param modifier
-     * @param parametersAsMap
-     * @param parametersAsArray 可以为null
-     * @return
+     *  dataSource
+     *  sql
+     *  modifier
+     *  parametersAsMap
+     *  parametersAsArray 可以为null
+     *
      */
     SQLInterpreterResult interpret(DataSource dataSource, String sql, Modifier modifier,
             Map<String, Object> parametersAsMap, Object[] parametersAsArray);

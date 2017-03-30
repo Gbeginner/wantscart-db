@@ -10,27 +10,27 @@ public interface ExprResolver {
     /**
      * 返回变量的内容。
      * 
-     * @param variant - 变量的名称
+     *  variant - 变量的名称
      * 
-     * @return 变量的内容
+     *  变量的内容
      */
     Object getVar(String variant);
 
     /**
      * 设置变量的内容。
      * 
-     * @param variant - 变量的名称
+     *  variant - 变量的名称
      * 
-     * @param value - 变量的内容
+     *  value - 变量的内容
      */
     void setVar(String variant, Object value);
 
     /**
      * 返回在语句输出的内容。
      * 
-     * @param expression - 解释的表达式
+     *  expression - 解释的表达式
      * 
-     * @return 输出的内容
+     *  输出的内容
      * 
      * @throws Exception
      */

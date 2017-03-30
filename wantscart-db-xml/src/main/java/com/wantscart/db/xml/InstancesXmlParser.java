@@ -25,7 +25,7 @@ public class InstancesXmlParser {
     private boolean parsed = false;
 
     /**
-     * @param source 配置文件路径
+     *  source 配置文件路径
      * @throws StromXmlConfigException
      */
     public InstancesXmlParser(final String source) throws StromXmlConfigException {
@@ -36,7 +36,7 @@ public class InstancesXmlParser {
     /**
      * 配置文件url
      * 
-     * @param url
+     *  url
      * @throws StromXmlConfigException
      */
     public InstancesXmlParser(final URL url) throws StromXmlConfigException {
@@ -47,7 +47,7 @@ public class InstancesXmlParser {
     /**
      * 开始进行解析.
      * 
-     * @return
+     *
      * @throws StromXmlConfigException
      */
     @SuppressWarnings("unchecked")
@@ -75,7 +75,7 @@ public class InstancesXmlParser {
     /**
      * 获取全部解析结果.
      * 
-     * @return
+     *
      */
     public synchronized List<DbInstanceConfig> getDbInstances() {
         checkParsed();
@@ -93,7 +93,7 @@ public class InstancesXmlParser {
     /**
      * 将指定的source解析为Dom.
      * 
-     * @return
+     *
      */
     private Document createDocument() throws StromXmlConfigException {
         SAXReader reader = new SAXReader();
@@ -109,8 +109,8 @@ public class InstancesXmlParser {
     /**
      * 提取dom跟节点.
      * 
-     * @param document
-     * @return
+     *  document
+     *
      */
     private Element getRoot(final Document document) {
         return document.getRootElement();

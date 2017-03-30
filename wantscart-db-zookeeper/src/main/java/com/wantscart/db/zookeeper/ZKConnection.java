@@ -41,7 +41,7 @@ public class ZKConnection {
     /**
      * 创建连接实例.
      * 
-     * @param servers 服务器地址列表
+     *  servers 服务器地址列表
      */
     public ZKConnection(final String servers) {
         this.servers = servers;
@@ -51,8 +51,8 @@ public class ZKConnection {
     /**
      * 创建连接实例.
      * 
-     * @param servers 服务器地址列表
-     * @param sessionTimeOut 客户端超时时间
+     *  servers 服务器地址列表
+     *  sessionTimeOut 客户端超时时间
      */
     public ZKConnection(final String servers, final int sessionTimeOut) {
         this.servers = servers;
@@ -62,7 +62,7 @@ public class ZKConnection {
     /**
      * 连接服务器.
      * 
-     * @param watcher
+     *  watcher
      */
     public void connect(final Watcher watcher) {
         zkLock.lock();
@@ -97,10 +97,10 @@ public class ZKConnection {
      * 读取数据. <br>
      * 该方法不能保证获取到的数据是最新的.如果对实时性有特别高的要求，请使用syncGetData方法.
      * 
-     * @param path
-     * @param watcher
-     * @param stat
-     * @return
+     *  path
+     *  watcher
+     *  stat
+     *
      * @throws KeeperException
      * @throws InterruptedException
      */
@@ -113,10 +113,10 @@ public class ZKConnection {
      * 从服务器读取最新版本的数据. <br>
      * 注意：此方法会引起阻塞，且不可中断，使用前请慎重考虑.
      * 
-     * @param path
-     * @param watcher
-     * @param stat
-     * @return
+     *  path
+     *  watcher
+     *  stat
+     *
      * @throws Throwable
      * @throws KeeperException
      * @throws InterruptedException
@@ -220,7 +220,7 @@ public class ZKConnection {
     /**
      * 删除znode.
      * 
-     * @param path
+     *  path
      * @throws InterruptedException
      * @throws KeeperException
      */
@@ -231,10 +231,10 @@ public class ZKConnection {
     /**
      * 修改znode数据.
      * 
-     * @param path
-     * @param data
-     * @param version -1表示不考虑服务端数据版本
-     * @return
+     *  path
+     *  data
+     *  version -1表示不考虑服务端数据版本
+     *
      * @throws KeeperException
      * @throws InterruptedException
      */
@@ -246,10 +246,10 @@ public class ZKConnection {
     /**
      * 创建znode.
      * 
-     * @param path
-     * @param data
-     * @param persistent
-     * @return
+     *  path
+     *  data
+     *  persistent
+     *
      * @throws KeeperException
      * @throws InterruptedException
      */
@@ -261,9 +261,9 @@ public class ZKConnection {
     /**
      * 读取znode状态.
      * 
-     * @param path
-     * @param watch
-     * @return
+     *  path
+     *  watch
+     *
      * @throws KeeperException
      * @throws InterruptedException
      */
@@ -275,9 +275,9 @@ public class ZKConnection {
     /**
      * 读取child列表.
      * 
-     * @param path
-     * @param watch
-     * @return
+     *  path
+     *  watch
+     *
      * @throws KeeperException
      * @throws InterruptedException
      */

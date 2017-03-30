@@ -30,7 +30,7 @@ public class ExqlContextImpl implements ExqlContext, SQLInterpreterResult {
     /**
      * 构造上下文对象。
      * 
-     * @param capacity - 缓存的容量
+     *  capacity - 缓存的容量
      */
     public ExqlContextImpl(int capacity) {
         builder = new StringBuilder(capacity);
@@ -89,7 +89,7 @@ public class ExqlContextImpl implements ExqlContext, SQLInterpreterResult {
     /**
      * 设置参数的内容。
      * 
-     * @param value - 参数的内容
+     *  value - 参数的内容
      */
     protected void setParam(Object value) {
         params.add(value);
@@ -100,7 +100,7 @@ public class ExqlContextImpl implements ExqlContext, SQLInterpreterResult {
      * 
      * PS: IN :varlist --> IN (?, ?, ...)
      * 
-     * @param collection - 输出的集合
+     *  collection - 输出的集合
      */
     private void fillCollection(Collection<?> collection) {
 

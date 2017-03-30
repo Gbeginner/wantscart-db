@@ -69,8 +69,8 @@ public final class DefaultJdbcDataSourceFactory implements JdbcDataSourceFactory
     /**
      * 创建MySQL DataSource
      * 
-     * @param server
-     * @return
+     *  server
+     *
      */
     public DataSource createMySQLDataSource(final DbServerConfig server) {
         BasicDataSource ds = new BasicDataSource();

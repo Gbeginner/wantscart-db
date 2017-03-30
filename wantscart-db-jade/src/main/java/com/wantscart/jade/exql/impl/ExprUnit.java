@@ -22,7 +22,7 @@ public class ExprUnit implements ExqlUnit {
     /**
      * 构造输出表达式内容的语句单元。
      *
-     * @param text - 输出的表达式
+     *  text - 输出的表达式
      */
     public ExprUnit(String expr) {
         if (StringUtils.contains(expr, ".")) {

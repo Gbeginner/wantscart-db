@@ -27,9 +27,9 @@ public class DateRouter implements Router {
     /**
      * 创建配置记录。
      * 
-     * @param column - 配置的列
-     * @param pattern - 数据表的名称模板
-     * @param partitions - 分区表达式如 yyyyddMM
+     *  column - 配置的列
+     *  pattern - 数据表的名称模板
+     *  partitions - 分区表达式如 yyyyddMM
      */
     public DateRouter(String column, String pattern, String partitions, boolean excludeNow) {
         if (pattern == null) {
@@ -52,7 +52,7 @@ public class DateRouter implements Router {
     /**
      * 设置配置的列。
      * 
-     * @param column - 配置的列
+     *  column - 配置的列
      */
     public void setColumn(String column) {
         this.column = column;
@@ -61,7 +61,7 @@ public class DateRouter implements Router {
     /**
      * 返回数据表的名称模板。
      * 
-     * @return 数据表的名称模板
+     *  数据表的名称模板
      */
     public String getPattern() {
         return pattern;
@@ -70,7 +70,7 @@ public class DateRouter implements Router {
     /**
      * 设置数据表的名称模板。
      * 
-     * @param pattern - 数据表的名称模板
+     *  pattern - 数据表的名称模板
      */
     public void setPattern(String pattern) {
         this.pattern = pattern;

@@ -19,21 +19,21 @@ public @interface Cache {
     /**
      * 标注 DAO 方法的缓存 Pool
      * 
-     * @return 缓存 Pool
+     *  缓存 Pool
      */
     String pool() default "default";
 
     /**
      * 标注 DAO 方法的缓存 Key.
      * 
-     * @return 缓存 Key
+     *  缓存 Key
      */
     String key();
 
     /**
      * 标注 DAO 缓存的过期时间。
      * 
-     * @return 缓存过期时间
+     *  缓存过期时间
      */
     int expiry() default 0;
 

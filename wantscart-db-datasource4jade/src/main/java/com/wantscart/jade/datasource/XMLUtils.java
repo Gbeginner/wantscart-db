@@ -17,9 +17,9 @@ public class XMLUtils {
     /**
      * 从 XML 元素读取文本。
      * 
-     * @param node - XML 节点
+     *  node - XML 节点
      * 
-     * @return XML 节点的文本
+     *  XML 节点的文本
      */
     public static String getText(Element node) {
 
@@ -40,9 +40,9 @@ public class XMLUtils {
     /**
      * 从 XML 父元素返回所有子元素。
      * 
-     * @param parent - XML 父元素
+     *  parent - XML 父元素
      * 
-     * @return 所有子元素列表
+     *  所有子元素列表
      */
     public static List<Element> getChildren(Element parent) {
 
@@ -69,10 +69,10 @@ public class XMLUtils {
     /**
      * 从 XML 父元素返回指定名称的子元素。
      * 
-     * @param parent - XML 父元素
-     * @param name - 子元素的名称
+     *  parent - XML 父元素
+     *  name - 子元素的名称
      * 
-     * @return 符合的子元素
+     *  符合的子元素
      */
     public static Element getChild(Element parent, String name) {
 
@@ -101,10 +101,10 @@ public class XMLUtils {
     /**
      * 从 XML 父元素返回指定名称的子元素内容。
      * 
-     * @param parent - XML 父元素
-     * @param name - 子元素的名称
+     *  parent - XML 父元素
+     *  name - 子元素的名称
      * 
-     * @return 符合的子元素内容
+     *  符合的子元素内容
      */
     public static String getChildText(Element parent, String name) {
 

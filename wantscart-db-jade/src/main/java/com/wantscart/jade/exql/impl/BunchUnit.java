@@ -18,7 +18,7 @@ public class BunchUnit implements ExqlUnit {
     /**
      * 构造顺序输出子单元的语句单元。
      * 
-     * @param units - 子单元列表
+     *  units - 子单元列表
      */
     public BunchUnit(List<ExqlUnit> units) {
         this.units = units;

@@ -87,7 +87,7 @@ public class RoutingDataSource implements DataSource {
     }
 
     /**
-     * @param locator
+     *  locator
      */
     public RoutingDataSource(ConnectionLocator locator) {
         this.setConnectionLocator(locator);
@@ -98,7 +98,7 @@ public class RoutingDataSource implements DataSource {
     /**
      * 新增给定的属性，必要时侯 {@link ConnectionLocator} 可以参考这些属性提供真正的数据库连接
      * 
-     * @param propertis
+     *  propertis
      */
     public void setPropertis(Properties propertis) {
         this.propertis.putAll(propertis);
@@ -107,7 +107,7 @@ public class RoutingDataSource implements DataSource {
     /**
      * 返回所有属性
      * 
-     * @return
+     *
      */
     public Properties getPropertis() {
         return propertis;
@@ -116,8 +116,8 @@ public class RoutingDataSource implements DataSource {
     /**
      * 设置给定属性，必要时侯 {@link ConnectionLocator} 可以参考这些属性提供真正的数据库连接
      * 
-     * @param name
-     * @param value
+     *  name
+     *  value
      */
     public void setProperty(String name, String value) {
         this.propertis.setProperty(name, value);
@@ -126,8 +126,8 @@ public class RoutingDataSource implements DataSource {
     /**
      * 返回给定名称的属性
      * 
-     * @param name
-     * @return
+     *  name
+     *
      */
     public String getProperty(String name) {
         return this.propertis.getProperty(name);
@@ -136,9 +136,9 @@ public class RoutingDataSource implements DataSource {
     /**
      * 返回给定名称的属性
      * 
-     * @param name
-     * @param defValue
-     * @return
+     *  name
+     *  defValue
+     *
      */
     public String getProperty(String name, String defValue) {
         return this.propertis.getProperty(name, defValue);
@@ -147,7 +147,7 @@ public class RoutingDataSource implements DataSource {
     /**
      * 设置实际数据库连接提供器
      * 
-     * @param locator
+     *  locator
      */
     public void setConnectionLocator(ConnectionLocator locator) {
         this.locator = locator;
@@ -156,7 +156,7 @@ public class RoutingDataSource implements DataSource {
     /**
      * 返回设置的实际数据库连接提供器
      * 
-     * @return
+     *
      */
     public ConnectionLocator getConnectionLocator() {
         return locator;

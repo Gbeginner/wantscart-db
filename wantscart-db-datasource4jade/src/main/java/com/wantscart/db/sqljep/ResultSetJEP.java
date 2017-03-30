@@ -82,7 +82,7 @@ public class ResultSetJEP extends BaseJEP {
      * Add the constant into constants table. If the table previously
      * contained a constant for this name, the old value is replaced.
      * 
-     * @return previous value of constant with specified name, or
+     *  previous value of constant with specified name, or
      *         <tt>null</tt> if there was no constant. A <tt>null</tt>
      *         return can also indicate that the previously value of the
      *         constant with the specified name was <tt>null</tt>.

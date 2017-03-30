@@ -149,7 +149,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 配置: XmlDocXceConfigurator 对象。
      * 
-     * @param file - 配置文件
+     *  file - 配置文件
      */
     public XmlDocConfigurator(File file) {
 
@@ -169,7 +169,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 配置: XmlDocXceConfigurator 对象。
      * 
-     * @param url - 配置网络路径
+     *  url - 配置网络路径
      */
     public XmlDocConfigurator(URL url) {
 
@@ -189,9 +189,9 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 配置: XmlDocXceConfigurator 对象。
      * 
-     * @param url - 配置网络路径
+     *  url - 配置网络路径
      * 
-     * @param failLoading - 如果从网络路径读取失败, 加载的默认路径, 可以是: <code>null</code>.
+     *  failLoading - 如果从网络路径读取失败, 加载的默认路径, 可以是: <code>null</code>.
      */
     public XmlDocConfigurator(URL url, File file, boolean priority) {
 
@@ -208,7 +208,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 返回配置文件。
      * 
-     * @return 配置文件
+     *  配置文件
      */
     public File getFile() {
         return file;
@@ -217,7 +217,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 设置配置文件。
      * 
-     * @param file - 配置文件
+     *  file - 配置文件
      */
     public void setFile(File file) {
 
@@ -235,7 +235,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 设置配置文件的路径。
      * 
-     * @param filePath - 配置文件的路径
+     *  filePath - 配置文件的路径
      */
     public void setFile(String filePath) {
 
@@ -255,7 +255,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 返回配置网络路径。
      * 
-     * @return - 配置网络路径
+     *  - 配置网络路径
      */
     public URL getURL() {
         return url;
@@ -264,7 +264,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 设置配置网络路径。
      * 
-     * @param url - 配置网络路径
+     *  url - 配置网络路径
      */
     public void setURL(URL url) {
 
@@ -282,7 +282,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 设置配置网络路径。
      * 
-     * @param url - 配置网络路径
+     *  url - 配置网络路径
      */
     public void setURL(String urlPath) {
 
@@ -359,12 +359,12 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 从指定的网络路径, 本地文件加载配置。
      * 
-     * @param url - 指定的网络路径
-     * @param file - 指定的本地文件
-     * @param priority - <code>true</code> 优先从网络加载, <code>false</code>
+     *  url - 指定的网络路径
+     *  file - 指定的本地文件
+     *  priority - <code>true</code> 优先从网络加载, <code>false</code>
      *        优先从本地加载
      * 
-     * @return 加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
+     *  加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
      */
     protected boolean loadXmlDoc(URL url, File file, boolean priority) {
 
@@ -439,9 +439,9 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 从指定的网络路径读取配置。
      * 
-     * @param url - 指定的网络路径
+     *  url - 指定的网络路径
      * 
-     * @return 加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
+     *  加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
      */
     private boolean loadXmlDoc(URL url) {
 
@@ -503,9 +503,9 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 从指定的文件读取配置。
      * 
-     * @param file - 指定的文件
+     *  file - 指定的文件
      * 
-     * @return 加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
+     *  加载成功返回 <code>true</code>, 否则返回 <code>false</code>.
      */
     private boolean loadXmlDoc(File file) {
 
@@ -563,7 +563,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 返回新建的: SAX DocumentBuilder 对象。
      * 
-     * @return SAX DocumentBuilder 对象
+     *  SAX DocumentBuilder 对象
      */
     private static DocumentBuilder createDocumentBuilder() {
 
@@ -609,7 +609,7 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 返回默认加载的配置路径。
      * 
-     * @return 默认的配置路径
+     *  默认的配置路径
      */
     private static URL getDefault() {
 
@@ -631,8 +631,8 @@ public class XmlDocConfigurator implements RoutingConfigurator {
     /**
      * 读取网址内容存入文件。
      * 
-     * @param url - 读取的网址
-     * @param file - 存入的文件
+     *  url - 读取的网址
+     *  file - 存入的文件
      */
     private static void saveToFile(URL url, File file) {
 

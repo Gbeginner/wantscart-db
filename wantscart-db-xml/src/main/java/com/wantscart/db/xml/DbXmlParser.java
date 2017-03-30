@@ -51,7 +51,7 @@ public class DbXmlParser {
     /**
      * 开始进行解析.
      * 
-     * @return
+     *
      * @throws InstanceXmlConfigException
      */
     private synchronized DbXmlParser doParse() throws InstanceXmlConfigException {
@@ -79,8 +79,8 @@ public class DbXmlParser {
     /**
      * 解析descriptor实例.
      * 
-     * @param conf
-     * @return
+     *  conf
+     *
      * @throws InstanceXmlConfigException
      */
     @SuppressWarnings("unchecked")
@@ -136,9 +136,9 @@ public class DbXmlParser {
     /**
      * 解析数据库实例配置.
      * 
-     * @param conf
-     * @param instance
-     * @return
+     *  conf
+     *  instance
+     *
      */
     @SuppressWarnings("unchecked")
     private DbInstanceConfig parseDbServer(final Element conf, final DbInstanceConfig instance) {
@@ -192,7 +192,7 @@ public class DbXmlParser {
     /**
      * 将指定的source解析为Dom.
      * 
-     * @return
+     *
      * @throws InstanceXmlConfigException
      */
     private Document createDocument() throws InstanceXmlConfigException {
@@ -210,8 +210,8 @@ public class DbXmlParser {
     /**
      * 提取dom跟节点.
      * 
-     * @param document
-     * @return
+     *  document
+     *
      */
     private Element getRoot(final Document document) {
         return document.getRootElement();

@@ -142,8 +142,8 @@ public final class UpdateDb extends StormCommand {
         /**
          * 比较新旧配置版本时间戳，如果更新则更新配置.
          * 
-         * @param oldConfig 旧版本配置
-         * @param newConfig 新版本配置
+         *  oldConfig 旧版本配置
+         *  newConfig 新版本配置
          */
         private void compareAndSet(DbInstanceConfig oldConfig, DbInstanceConfig newConfig) {
             String path = cacuDbPath(newConfig.getName());
@@ -165,7 +165,7 @@ public final class UpdateDb extends StormCommand {
         /**
          * 创建数据服务配置节点.
          * 
-         * @param newConfig
+         *  newConfig
          */
         private void createDb(DbInstanceConfig newConfig) {
             String path = cacuDbPath(newConfig.getName());
@@ -220,8 +220,8 @@ public final class UpdateDb extends StormCommand {
         /**
          * 创建依赖节点.
          * 
-         * @param routerName 路由名称
-         * @param signlerName 单例名称
+         *  routerName 路由名称
+         *  signlerName 单例名称
          */
         private void createDependency(final String routerName, final String signlerName) {
             String dpath = cacuDbPath(routerName) + "/dependencies/" + signlerName;
@@ -235,8 +235,8 @@ public final class UpdateDb extends StormCommand {
         /**
          * 创建引用节点.
          * 
-         * @param signlerName 单例名称
-         * @param routerName 路由名称
+         *  signlerName 单例名称
+         *  routerName 路由名称
          */
         private void createReference(final String signlerName, final String routerName) {
             String refPath = cacuDbPath(signlerName) + "/references/" + routerName;
@@ -255,8 +255,8 @@ public final class UpdateDb extends StormCommand {
         /**
          * 获取旧版本数据服务配置.
          * 
-         * @param config
-         * @return
+         *  config
+         *
          */
         private DbInstanceConfig getOldVersion(DbInstanceConfig config) {
             String path = cacuDbPath(config.getName());

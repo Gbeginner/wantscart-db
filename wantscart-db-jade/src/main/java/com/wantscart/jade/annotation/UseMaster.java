@@ -19,7 +19,7 @@ public @interface UseMaster {
     /**
      * 是否需要强制查询 master 数据库。
      * 
-     * @return 强制查询 master 数据库
+     *  强制查询 master 数据库
      */
     boolean value() default true;
 }

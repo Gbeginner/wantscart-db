@@ -67,7 +67,7 @@ public @interface SQL {
 
     /**
      * 
-     * @return Jade支持的SQL语句
+     *  Jade支持的SQL语句
      */
     String value();
 
@@ -75,7 +75,7 @@ public @interface SQL {
      * 返回该语句的类型，查询类型或变更类型。
      * 默认Jade认为只有以SELECT开始的才是查询类型，其他的为变更类型。开发者通过这个属性用来变更Jade默认的处理!
      * 
-     * @return 查询类型
+     *  查询类型
      */
     SQLType type() default SQLType.AUTO_DETECT;
 }

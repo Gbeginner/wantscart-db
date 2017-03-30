@@ -14,8 +14,8 @@ public abstract class StormCommand {
     /**
      * 根据db名称构造zookeeper path.
      * 
-     * @param db
-     * @return
+     *  db
+     *
      */
     protected static String cacuDbPath(final String db) {
         return AdminConfig.getConfig().getZKRoot() + "/" + db;

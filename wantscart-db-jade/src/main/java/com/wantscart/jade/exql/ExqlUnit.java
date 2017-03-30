@@ -12,9 +12,9 @@ public interface ExqlUnit {
     /**
      * 检查单元的内容是否有效。
      * 
-     * @param exprResolver - 使用的引擎
+     *  exprResolver - 使用的引擎
      * 
-     * @return 内容是否有效
+     *  内容是否有效
      * 
      * @throws Exception
      */
@@ -23,8 +23,8 @@ public interface ExqlUnit {
     /**
      * 输出单元的语句内容。
      * 
-     * @param exqlContext - 输出上下文
-     * @param exprResolver - 使用的引擎
+     *  exqlContext - 输出上下文
+     *  exprResolver - 使用的引擎
      * 
      * @throws Exception
      */
@@ -33,7 +33,7 @@ public interface ExqlUnit {
     /**
      * 输出xml格式的数据
      * 
-     * @param xml
+     *  xml
      */
     void toXml(StringBuffer xml, String prefix);
 

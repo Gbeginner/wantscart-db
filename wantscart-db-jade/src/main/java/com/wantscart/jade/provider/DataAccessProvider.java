@@ -26,9 +26,9 @@ public interface DataAccessProvider {
     /**
      * 创建一个: {@link DataAccess} 对象。
      * 
-     * @param catalog -
+     *  catalog -
      * 
-     * @return DataAccess 对象
+     *  DataAccess 对象
      */
     public DataAccess createDataAccess(Class<?> daoClass);
 }

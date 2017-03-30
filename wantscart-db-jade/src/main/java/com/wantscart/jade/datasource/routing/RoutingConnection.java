@@ -90,7 +90,7 @@ public class RoutingConnection implements Connection {
 
     /**
      * @see RoutingDataSource#getConnection()
-     * @param routingDataSource
+     *  routingDataSource
      */
     public RoutingConnection(RoutingDataSource routingDataSource) {
         this.routingDataSource = routingDataSource;
@@ -98,9 +98,9 @@ public class RoutingConnection implements Connection {
 
     /**
      * @see RoutingDataSource#getConnection(String, String)
-     * @param routingDataSource
-     * @param username
-     * @param password
+     *  routingDataSource
+     *  username
+     *  password
      */
     public RoutingConnection(RoutingDataSource routingDataSource, String username, String password) {
         this.routingDataSource = routingDataSource;
